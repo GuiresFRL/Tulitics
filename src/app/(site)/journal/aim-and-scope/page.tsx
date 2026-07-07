@@ -3,41 +3,112 @@ import JournalHeader from '@/components/JournalHeader'
 
 export const metadata: Metadata = { title: 'Aim and Scope – JAIMPH' }
 
+const topics = [
+  {
+    title: 'Medical & Life Sciences',
+    desc: 'Research on diseases, molecular and cellular mechanisms, immunology, neuroscience, microbiology, translational research, regenerative and precision medicine.',
+  },
+  {
+    title: 'Clinical Research & Therapeutics',
+    desc: 'AI-assisted diagnostics, drug and vaccine development, novel therapies, and clinical trials including real-world evidence.',
+  },
+  {
+    title: 'Public Health & Epidemiology',
+    desc: 'Population health, disease surveillance, outbreak prediction, environmental and social determinants, and health policy strategies.',
+  },
+  {
+    title: 'Digital Health & AI Applications',
+    desc: 'Telemedicine, wearable devices, predictive analytics, clinical decision support, and AI in medical imaging and healthcare innovation.',
+  },
+  {
+    title: 'Emerging Trends & Innovation',
+    desc: 'Medtech, biotechnology, bioinformatics, synthetic biology, and interdisciplinary life sciences research.',
+  },
+  {
+    title: 'Ethics, Policy & Regulation',
+    desc: 'Ethical, legal, and social implications of AI and digital health, regulatory frameworks, and healthcare governance.',
+  },
+]
+
 export default function AimAndScopePage() {
   return (
     <>
       <JournalHeader subtitle="Aim and Scope" />
-      <div className="max-w-4xl mx-auto px-6 py-12 space-y-8">
-        <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Aim &amp; Scope</h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            The Journal of Artificial Intelligence in Medicine and Public Health (JAIMPH) is dedicated to advancing knowledge
-            at the intersection of artificial intelligence, medicine, and public health. It publishes original research,
-            review articles, short communications, and case reports that contribute to the understanding and application
-            of AI in healthcare.
+      <div className="max-w-5xl mx-auto px-6 py-14">
+
+        {/* Overview */}
+        <div className="mb-12">
+          <p className="text-gray-700 leading-relaxed text-base">
+            Journal of Artificial Intelligence in Medicine and Public Health (JAIMPH), the official journal
+            of Tulitics, is a multidisciplinary, peer-reviewed quarterly journal advancing research at the
+            intersection of medicine and artificial intelligence (AI). It publishes Original Research,
+            Reviews, Short Communications, and Case Reports, providing a platform for AI-driven medical
+            research, innovations, and evidence-based insights that improve healthcare and inform global
+            health policy. The journal is fully open access, with no fees for submission, review,
+            processing, or publication, ensuring free and equitable dissemination of research worldwide.
           </p>
-        </section>
-        <section>
-          <h3 className="text-lg font-bold text-gray-900 mb-4">Scope Areas</h3>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {[
-              ['🧠', 'AI & Machine Learning', 'Deep learning, NLP, computer vision in clinical contexts'],
-              ['🏥', 'Clinical Research', 'Diagnostics, therapeutics, clinical trials, real-world evidence'],
-              ['🌍', 'Public Health', 'Epidemiology, disease surveillance, health policy'],
-              ['📱', 'Digital Health', 'Telemedicine, wearables, mHealth, clinical decision support'],
-              ['🧬', 'Biomedical Informatics', 'Genomics, proteomics, precision medicine, bioinformatics'],
-              ['⚖️', 'Ethics & Governance', 'AI ethics, regulatory frameworks, data privacy in healthcare'],
-            ].map(([icon, title, desc]) => (
-              <div key={String(title)} className="flex gap-3 p-4 rounded-xl bg-gray-50">
-                <span className="text-2xl flex-shrink-0">{icon}</span>
-                <div>
-                  <p className="text-sm font-semibold text-gray-900">{title}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{desc}</p>
+        </div>
+
+        {/* Scope topics */}
+        <section className="mb-14">
+          <h2 className="text-xl font-bold text-gray-900 mb-2 pb-2 border-b border-gray-200">Scope</h2>
+          <p className="text-gray-600 text-sm mb-8 leading-relaxed">
+            The journal welcomes contributions across a broad spectrum of areas, including but not limited to:
+          </p>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {topics.map(t => (
+              <div key={t.title} className="rounded-xl border border-gray-100 p-6 hover:border-green-200 hover:shadow-sm transition-all">
+                <div className="flex items-start gap-3">
+                  <span className="mt-1 w-2 h-2 rounded-full flex-shrink-0" style={{ background: '#0fb68c' }} />
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">{t.title}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">{t.desc}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </section>
+
+        {/* Vision */}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Vision</h2>
+          <div className="rounded-xl p-6" style={{ background: '#f7faf9' }}>
+            <p className="text-gray-700 leading-relaxed">
+              Journal of Artificial Intelligence in Medicine and Public Health (JAIMPH) aims to be the
+              premier platform for AI-driven medical research, advancing knowledge that transforms
+              healthcare and benefits society. We strive to shape the future of medicine and public health
+              through innovative, evidence-based solutions that improve lives globally.
+            </p>
+          </div>
+        </section>
+
+        {/* Mission */}
+        <section className="mb-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Mission</h2>
+          <div className="rounded-xl p-6" style={{ background: '#f7faf9' }}>
+            <p className="text-gray-700 leading-relaxed">
+              Our mission is to publish rigorous, high-quality research integrating AI, medicine, and
+              public health, maximizing both scientific and societal impact. We are committed to fostering
+              innovation, informing policy, and delivering accessible knowledge that empowers researchers,
+              clinicians, and communities worldwide.
+            </p>
+          </div>
+        </section>
+
+        {/* Quick facts */}
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { label: 'Journal Type', value: 'Peer-Reviewed, Multidisciplinary' },
+            { label: 'Frequency', value: 'Quarterly' },
+            { label: 'Access', value: 'Fully Open Access — No Fees' },
+          ].map(f => (
+            <div key={f.label} className="rounded-xl p-5 border border-gray-100 text-center">
+              <div className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">{f.label}</div>
+              <div className="font-bold text-gray-900 text-sm">{f.value}</div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   )

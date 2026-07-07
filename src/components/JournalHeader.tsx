@@ -22,7 +22,15 @@ const navItems = [
     label: 'Editorial Policies & Guidelines',
     children: [
       { label: 'Editorial Policies', href: '/journal/editorial-policies' },
+      { label: 'Plagiarism Policies', href: '/journal/plagiarism-policy' },
+      { label: 'Peer Review Policies', href: '/journal/peer-review-policies' },
+      { label: 'Ethics Approval Policy', href: '/journal/ethics-approval-policy' },
+      { label: 'Authorship Policy', href: '/journal/authorship-policy' },
+      { label: 'Conflict of Interest', href: '/journal/conflict-of-interest' },
+      { label: 'Citation Manipulation Policy', href: '/journal/citation-manipulation-policy' },
+      { label: 'Corrections and Retractions Policy', href: '/journal/corrections-and-retractions' },
       { label: 'Open Access Policy', href: '/journal/open-access-policy' },
+      { label: 'Article Processing Charges (APC) Policy', href: '/journal/article-processing-charges' },
     ],
   },
   {
