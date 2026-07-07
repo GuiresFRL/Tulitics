@@ -22,7 +22,7 @@ const navItems = [
       { label: 'Submit an Article', href: '/journal/submit-an-article' },
     ],
   },
-  { label: 'Publish an Article', href: '/publish' },
+  { label: 'Publish an Article', href: 'https://journal-management-system-omega.vercel.app/' },
   { label: 'Insights', href: '/insights' },
   { label: 'Support', href: '/support' },
 ]

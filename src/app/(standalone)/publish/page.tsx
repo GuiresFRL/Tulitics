@@ -1,9 +1,7 @@
-import type { Metadata } from 'next'
-import Link from 'next/link'
-
-export const metadata: Metadata = { title: 'Publish an Article – Tulitics' }
+import { redirect } from 'next/navigation'
 
 export default function PublishPage() {
+  redirect('https://journal-management-system-omega.vercel.app/')
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
       {/* LEFT: Dark green info panel */}
