@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   title: 'Tulitics – Scholarly Publishing',
   description: 'Advancing high quality research with strong editorial standards.',
   metadataBase: new URL('https://guires.info'),
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
