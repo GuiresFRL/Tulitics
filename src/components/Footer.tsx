@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div>
-            <h3 className="text-xl font-bold mb-3">Tulitics</h3>
+            <img src="/images/logo.png" alt="Tulitics" className="h-10 mb-3 brightness-0 invert" />
             <p className="text-green-200 text-sm leading-relaxed">
               Advancing research through open-access publishing in medicine, public health, and AI.
             </p>
