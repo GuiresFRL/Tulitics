@@ -260,17 +260,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── DISCOVER BANNER ──────────────────────────────────────── */}
-      <section className="py-10 px-6 text-white text-center" style={{ background: '#0a2e2e' }}>
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-xl font-bold mb-2">Discover +50,000 books, e-journals and journals</h2>
-          <p className="text-green-200 text-sm mb-6">Amplify science, exchange perspectives and share experiences with the global research community.</p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/insights" className="px-7 py-2.5 font-semibold bg-white text-gray-900 hover:bg-gray-100 transition-colors text-sm">Explore Researcher Voices</Link>
-            <Link href="/journal" className="px-7 py-2.5 font-semibold border-2 border-white text-white hover:bg-white/10 transition-colors text-sm">Visit Tulitics Shop</Link>
-          </div>
-        </div>
-      </section>
     </>
   )
 }
