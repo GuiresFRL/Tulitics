@@ -59,10 +59,16 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
             />
           </div>
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold text-white leading-tight mb-2">
-              Journal of Artificial Intelligence in Medicine &amp; Public Health
+            <h1 className="text-2xl md:text-3xl font-bold text-white leading-tight mb-3">
+              {subtitle || 'Journal of Artificial Intelligence in Medicine & Public Health'}
             </h1>
-            <p className="text-green-300 text-base">{subtitle || 'Supports open access'}</p>
+            {!subtitle && (
+              <div className="space-y-1 text-sm text-white">
+                <p><span className="font-semibold">Frequency</span>: Quarterly</p>
+                <p><span className="font-semibold">Access</span>: Fully Open Access</p>
+                <p><span className="font-semibold">APC</span>: No Fees</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
