@@ -204,30 +204,33 @@ export default function Home() {
 
       {/* ── DARK AI SECTION ──────────────────────────────────────── */}
       <section
-        className="relative text-white py-14 px-6"
-        style={{
-          backgroundImage: 'url(/images/ai-healthcare.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+        className="text-white py-14 px-6"
+        style={{ background: 'linear-gradient(to right, #0d0d0d 45%, #1a1a2e 100%)' }}
       >
-        <div className="absolute inset-0" style={{ background: 'rgba(5,20,15,0.75)' }} />
-        <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 className="text-3xl font-bold mb-3 leading-snug">
-              Advancing Research in<br />Medicine, Public Health<br />&amp; AI
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+          <div className="flex-1">
+            <h2 className="text-3xl font-bold mb-4 leading-snug">
+              Advancing Research in<br />Medicine,<br />Public Health &amp; AI
             </h2>
-            <p className="text-gray-300 text-sm mb-6 leading-relaxed max-w-md">
+            <p className="text-gray-400 text-sm mb-8 leading-relaxed max-w-md">
               Supporting innovative research in medicine, public health, and AI to improve global healthcare.
             </p>
             <Link
               href="https://journal-management-system-omega.vercel.app/"
-              className="inline-flex items-center gap-2 px-8 py-3 border-2 border-white text-white font-semibold hover:bg-white hover:text-gray-900 transition-colors text-sm"
+              className="inline-flex items-center gap-3 px-8 py-3 rounded-full font-semibold text-gray-900 transition-colors text-sm"
+              style={{ background: '#e8e8e8' }}
             >
-              Submit Your Research →
+              Submit Your Research <span>→</span>
             </Link>
           </div>
-          <div className="hidden md:block" />
+          <div className="flex-1 flex justify-end">
+            <img
+              src="/images/ai-healthcare.jpg"
+              alt="AI in Healthcare"
+              className="rounded-xl object-cover w-full max-w-md shadow-2xl"
+              style={{ maxHeight: '380px' }}
+            />
+          </div>
         </div>
       </section>
 
