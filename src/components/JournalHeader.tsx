@@ -101,9 +101,16 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
               </div>
             ))}
           </div>
-          <Link href="/journal/guide-for-authors" className="ml-4 px-5 py-2 text-sm font-semibold text-white rounded" style={{ background: '#0a2e2e' }}>
-            Guide for Author
-          </Link>
+          <div className="flex items-center gap-3 ml-4">
+            <Link href="/journal/guide-for-authors" className="px-5 py-2 text-sm font-semibold text-white rounded" style={{ background: '#0a2e2e' }}>
+              Guide for Author
+            </Link>
+            <button aria-label="Search" className="p-2 text-gray-500 hover:text-gray-900 transition-colors">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 111 11a6 6 0 0116 0z" />
+              </svg>
+            </button>
+          </div>
         </div>
       </nav>
     </>
