@@ -114,9 +114,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold mb-1 text-gray-900">Our journals</h2>
           <p className="text-gray-500 text-sm mb-10">Latest breakthroughs in AI-powered healthcare and medicine</p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Active journal card */}
-            <div className="rounded-2xl border border-gray-200 shadow-sm p-6 flex gap-5 bg-white">
+          <div className="grid md:grid-cols-4 gap-6">
+            {/* Active journal card — spans 2 of 4 columns */}
+            <div className="md:col-span-2 rounded-2xl border border-gray-200 shadow-sm p-6 flex gap-5 bg-white">
               <div className="flex-shrink-0">
                 <img src="/images/journal-cover.jpg" alt="JAIMPH" className="w-28 rounded shadow" />
               </div>
