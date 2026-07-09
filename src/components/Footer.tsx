@@ -6,20 +6,22 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div>
-            <img src="/images/logo.png" alt="Tulitics" className="h-10 mb-3 brightness-0 invert" />
+            <img src="/images/logo.png" alt="Tulitics" className="h-10 mb-3" />
             <p className="text-green-200 text-sm leading-relaxed">
               Advancing research through open-access publishing in medicine, public health, and AI.
             </p>
-            <div className="flex gap-2 mt-4">
+            <div className="flex gap-3 mt-4">
               {[
-                { label: 'F', title: 'Facebook' },
-                { label: 'X', title: 'X/Twitter' },
-                { label: 'Y', title: 'YouTube' },
-                { label: 'I', title: 'Instagram' },
-                { label: 'in', title: 'LinkedIn' },
-              ].map((s) => (
-                <a key={s.title} href="#" aria-label={s.title} className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-xs font-bold transition-colors">
-                  {s.label}
+                { title: 'Facebook',  d: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z' },
+                { title: 'X',        d: 'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.629 5.904-5.629zm-1.161 17.52h1.833L7.084 4.126H5.117z' },
+                { title: 'YouTube',  d: 'M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z' },
+                { title: 'Instagram', d: 'M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M7.5 2h9A5.5 5.5 0 0122 7.5v9A5.5 5.5 0 0116.5 22h-9A5.5 5.5 0 012 16.5v-9A5.5 5.5 0 017.5 2z' },
+                { title: 'LinkedIn', d: 'M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z M4 6a2 2 0 100-4 2 2 0 000 4z' },
+              ].map(({ title, d }) => (
+                <a key={title} href="#" aria-label={title} className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d={d} />
+                  </svg>
                 </a>
               ))}
             </div>
