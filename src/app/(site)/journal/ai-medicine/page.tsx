@@ -10,12 +10,6 @@ const boardMembers = [
   { name: 'Adam Cheise', role: 'Designer', initials: 'AC', color: '#34d399' },
 ]
 
-const benefits = [
-  { icon: '/images/icon-review.jpg',     title: 'Fast and transparent review process' },
-  { icon: '/images/icon-openaccess.png', title: 'Open access visibility' },
-  { icon: '/images/icon-editorial.png',  title: 'Experienced editorial board' },
-  { icon: '/images/icon-editorial.png',  title: 'Ethical publishing standards' },
-]
 
 const joinTabs = ['Join as Editorial Board Member', 'Partnerships & Collaborations', 'Join as Reviewer']
 
@@ -50,18 +44,11 @@ export default function AIMedicinePage() {
             {/* About the journal */}
             <section className="border border-gray-200 rounded-xl p-6">
               <h2 className="text-base font-bold text-gray-900 mb-4">About the journal</h2>
-              <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                Journal of Artificial Intelligence in Medicine and Public Health is a peer-reviewed, fully open-access
-                journal advancing research at the intersection of artificial intelligence, medicine, and public health.
-                It publishes Original Research Articles, Review Articles, Short Communications, and Case Reports focused
-                on innovative and evidence-based healthcare solutions.
-              </p>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                With no submission or publication fees, the journal ensures free and global access to high-quality
-                scientific knowledge that supports research, clinical practice, and health policy.
+                Journal of Artificial Intelligence in Medicine and Public Health is a peer-reviewed, fully open-access journal advancing research at the intersection of artificial intelligence, medicine, and public health. It publishes Original Research Articles, Review Articles, Short Communications, and Case Reports focused on innovative and evidence-based healthcare solutions. With no submission or publication fees, the journal ensures free and global access to high-quality scientific knowledge that supports research, clinical practice, and health policy.
               </p>
               <Link href="/journal/aim-and-scope" className="text-sm font-medium" style={{ color: '#0a8c6a' }}>
-                View full aims &amp; scope
+                View full Aim &amp; Scope →
               </Link>
             </section>
 
@@ -93,34 +80,18 @@ export default function AIMedicinePage() {
               </div>
             </section>
 
-            {/* Why Publishing with Us */}
-            <section>
-              <h2 className="text-xl font-bold text-gray-900 mb-1">Why Publishing with Us</h2>
-              <p className="text-gray-400 text-sm mb-6">Latest breakthroughs in AI-powered healthcare and medicine</p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-5">
-                {benefits.map(b => (
-                  <div key={b.title} className="bg-gray-50 rounded-xl p-4 text-center">
-                    <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center rounded-lg overflow-hidden bg-white shadow-sm">
-                      <img src={b.icon} alt={b.title} className="w-8 h-8 object-contain" />
-                    </div>
-                    <p className="text-xs font-medium text-gray-700 leading-snug">{b.title}</p>
-                  </div>
-                ))}
+            {/* Publication Timeline */}
+            <div className="rounded-xl overflow-hidden flex flex-col sm:flex-row text-white text-sm" style={{ background: '#0a5c3c' }}>
+              <div className="px-5 py-4 font-bold text-sm flex-shrink-0 flex items-center border-b sm:border-b-0 sm:border-r border-white/20">
+                Publication Timeline
               </div>
-
-              {/* Publication Timeline bar */}
-              <div className="rounded-xl overflow-hidden flex flex-col sm:flex-row text-white text-sm" style={{ background: '#0a5c3c' }}>
-                <div className="px-5 py-4 font-bold text-sm flex-shrink-0 flex items-center border-b sm:border-b-0 sm:border-r border-white/20">
-                  Publication Timeline
+              {[['1-2 Weeks', 'Acceptance to Publication'], ['3-4 Weeks', 'Peer Review'], ['1-2 Weeks', 'To First Decision']].map(([weeks, label]) => (
+                <div key={label} className="flex-1 px-5 py-4 text-center border-b sm:border-b-0 sm:border-r border-white/20 last:border-0">
+                  <p className="font-bold">{weeks}</p>
+                  <p className="text-green-200 text-xs mt-0.5">{label}</p>
                 </div>
-                {[['1-2 Weeks', 'To First Decision'], ['3-4 Weeks', 'Peer Review'], ['1-2 Weeks', 'Acceptance to Publications']].map(([weeks, label]) => (
-                  <div key={label} className="flex-1 px-5 py-4 text-center border-b sm:border-b-0 sm:border-r border-white/20 last:border-0">
-                    <p className="font-bold">{weeks}</p>
-                    <p className="text-green-200 text-xs mt-0.5">{label}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
+              ))}
+            </div>
 
             {/* Join Tabs */}
             <section>
@@ -203,21 +174,23 @@ export default function AIMedicinePage() {
             >
               <div className="absolute inset-0" style={{ background: 'rgba(5,20,15,0.80)' }} />
               <div className="relative z-10 p-5">
-                <h3 className="font-bold text-base mb-4">News and Announcements</h3>
+                <Link href="/journal/news-and-announcements" className="font-bold text-base mb-4 block hover:text-green-300 transition-colors">
+                  News and Announcements
+                </Link>
                 <ul className="space-y-2 mb-5">
-                  {['Join as an editorial board member', 'Partnerships & Collaborations', 'Join as reviewer', 'Blog', 'Call for Papers'].map(item => (
-                    <li key={item} className="flex items-start gap-2 text-sm text-green-100">
+                  {[
+                    { label: 'Join as an editorial board member', href: '/journal/join-editorial-board' },
+                    { label: 'Partnerships & Collaborations', href: '/journal/partnerships' },
+                    { label: 'Join as reviewer', href: '/journal/join-reviewer' },
+                    { label: 'Blog', href: '/journal/blog' },
+                    { label: 'Call for Papers', href: '/journal/call-for-papers' },
+                  ].map(item => (
+                    <li key={item.label} className="flex items-start gap-2 text-sm text-green-100">
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-green-300 flex-shrink-0" />
-                      {item}
+                      <Link href={item.href} className="hover:text-white transition-colors">{item.label}</Link>
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href="/insights"
-                  className="inline-flex items-center gap-2 px-4 py-2 border border-white rounded text-xs font-semibold hover:bg-white/10 transition-colors"
-                >
-                  Read now →
-                </Link>
               </div>
             </div>
           </div>
