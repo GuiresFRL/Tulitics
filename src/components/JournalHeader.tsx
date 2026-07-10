@@ -110,7 +110,7 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
             ))}
           </div>
           <div className="flex items-center gap-3 ml-4">
-            <Link href="https://journal-management-system-omega.vercel.app/" className="px-5 py-2 text-sm font-semibold text-white rounded" style={{ background: '#0a2e2e' }}>
+            <Link href="https://journal-management-system-omega.vercel.app/" className="px-5 py-2 text-sm font-semibold text-white rounded whitespace-nowrap" style={{ background: '#0a2e2e' }}>
               Submit a Manuscript
             </Link>
             <button aria-label="Search" className="p-2 text-gray-500 hover:text-gray-900 transition-colors">

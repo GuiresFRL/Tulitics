@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -24,12 +25,14 @@ const navItems = [
   },
   { label: 'Insights', href: '/insights' },
   { label: 'Support', href: '/support' },
-  { label: 'Publish an Article', href: 'https://journal-management-system-omega.vercel.app/', highlight: true },
+  { label: 'Sign In', href: 'https://journal-management-system-omega.vercel.app/login', highlight: true },
 ]
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [open, setOpen] = useState<string | null>(null)
+  const pathname = usePathname()
+  const isJournal = pathname.startsWith('/journal')
 
   return (
     <header className="sticky top-0 z-50 shadow-sm">
@@ -66,13 +69,18 @@ export default function Header() {
                 onMouseEnter={() => setOpen(item.label)}
                 onMouseLeave={() => setOpen(null)}
               >
-                {item.href ? (
+                {item.href && item.highlight ? (
+                  <Link
+                    href={isJournal ? 'https://journal-management-system-omega.vercel.app/login' : item.href}
+                    className="px-4 py-2 text-sm font-semibold text-white rounded whitespace-nowrap"
+                    style={{ background: '#0a2e2e' }}
+                  >
+                    {isJournal ? 'Login / Register' : item.label}
+                  </Link>
+                ) : item.href ? (
                   <Link
                     href={item.href}
-                    className={item.highlight
-                      ? 'px-4 py-2 text-sm font-semibold text-white rounded whitespace-nowrap'
-                      : 'px-3 py-2 text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap'}
-                    style={item.highlight ? { background: '#0fb68c' } : {}}
+                    className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap"
                   >
                     {item.label}
                   </Link>
@@ -120,7 +128,7 @@ export default function Header() {
               item.href ? (
                 <Link key={item.label} href={item.href}
                   className={item.highlight ? 'block py-2 text-sm font-semibold text-white px-3 rounded text-center' : 'block py-2 text-sm font-medium text-gray-700 hover:text-green-800'}
-                  style={item.highlight ? { background: '#0fb68c' } : {}}
+                  style={item.highlight ? { background: '#0a2e2e' } : {}}
                   onClick={() => setMobileOpen(false)}>
                   {item.label}
                 </Link>
