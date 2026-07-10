@@ -3,12 +3,38 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const navItems = [
-  { label: 'Home', href: '/journal/ai-medicine' },
-  { label: 'Aim and Scope', href: '/journal/aim-and-scope' },
-  { label: 'Editorial & Advisory Board', href: '/journal/editorial-and-advisory-board' },
-  { label: 'Journal Information', href: '/journal/journal-information' },
-  { label: 'APC', href: '/journal/article-processing-charges' },
-  { label: 'Editorial Policies & Guidelines', href: '/journal/editorial-policies' },
+  {
+    label: 'About',
+    children: [
+      { label: 'Aim & Scope', href: '/journal/aim-and-scope' },
+      { label: 'Editorial & Advisory Board', href: '/journal/editorial-and-advisory-board' },
+      { label: 'Journal Information', href: '/journal/journal-information' },
+      { label: 'Article Processing Charge', href: '/journal/article-processing-charges' },
+    ],
+  },
+  {
+    label: 'Article / Issues',
+    children: [
+      { label: 'Current', href: '/journal/current-issue' },
+      { label: 'Inpress', href: '/journal/inpress' },
+      { label: 'Archives / All Issues', href: '/journal/all-issues' },
+    ],
+  },
+  {
+    label: 'Editorial Policies & Guidelines',
+    children: [
+      { label: 'Editorial Policies', href: '/journal/editorial-policies' },
+      { label: 'Plagiarism Policies', href: '/journal/editorial-policies#plagiarism' },
+      { label: 'Peer Review Policies', href: '/journal/editorial-policies#peer-review' },
+      { label: 'Ethics Approval Policy', href: '/journal/editorial-policies#ethics' },
+      { label: 'Authorship Policy', href: '/journal/editorial-policies#authorship' },
+      { label: 'Conflict of Interest', href: '/journal/editorial-policies#conflict' },
+      { label: 'Citation Manipulation Policy', href: '/journal/editorial-policies#citation' },
+      { label: 'Corrections and Retractions Policy', href: '/journal/editorial-policies#corrections' },
+      { label: 'Open Access Policy', href: '/journal/editorial-policies#open-access' },
+      { label: 'Article Processing Charges Policy', href: '/journal/article-processing-charges' },
+    ],
+  },
   {
     label: 'Information For',
     children: [
@@ -16,7 +42,7 @@ const navItems = [
       { label: 'Instruction for Reviewer', href: '/journal/instruction-for-reviewer' },
     ],
   },
-  { label: 'Contact Us', href: '/journal/contact-us' },
+  { label: 'Contact us', href: '/journal/contact-us' },
 ]
 
 export default function JournalHeader({ subtitle }: { subtitle?: string }) {
