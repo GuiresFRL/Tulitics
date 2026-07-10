@@ -94,8 +94,7 @@ export default function IndustryPage() {
       >
         <div className="absolute inset-0" style={{ background: 'rgba(5,30,25,0.70)' }} />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
-          <p className="text-green-300 text-sm font-medium mb-2 uppercase tracking-widest">Industries</p>
-          <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-3">Healthcare &amp; Hospitals</h1>
+          <p className="text-green-300 text-sm font-medium mb-3 uppercase tracking-widest">Industries</p>
           <p className="text-gray-200 text-sm max-w-2xl leading-relaxed">
             Scientific research solutions to help healthcare institutions make better decisions about clinical and administrative aspects.
           </p>
@@ -169,15 +168,6 @@ export default function IndustryPage() {
                 </div>
               )}
 
-              <div className="mt-8">
-                <Link
-                  href="/support"
-                  className="inline-block px-8 py-3 font-bold text-white text-sm rounded"
-                  style={{ background: '#0a2e2e' }}
-                >
-                  READ MORE
-                </Link>
-              </div>
             </div>
           </div>
         </div>
