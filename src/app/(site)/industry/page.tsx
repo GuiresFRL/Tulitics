@@ -94,7 +94,7 @@ export default function IndustryPage() {
       >
         <div className="absolute inset-0" style={{ background: 'rgba(5,30,25,0.70)' }} />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
-          <p className="text-green-300 text-sm font-medium mb-3 uppercase tracking-widest">Industries</p>
+          <p className="text-white text-2xl font-bold mb-3">Industries</p>
           <p className="text-gray-200 text-sm max-w-2xl leading-relaxed">
             Scientific research solutions to help healthcare institutions make better decisions about clinical and administrative aspects.
           </p>
