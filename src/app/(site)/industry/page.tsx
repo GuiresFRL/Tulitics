@@ -92,9 +92,9 @@ export default function IndustryPage() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0" style={{ background: 'rgba(5,30,25,0.70)' }} />
+        <div className="absolute inset-0" style={{ background: 'rgba(5,30,25,0.88)' }} />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
-          <p className="text-white text-2xl font-bold mb-3">Industries</p>
+          <p className="text-white text-4xl font-extrabold mb-3">Industries</p>
           <p className="text-gray-200 text-sm max-w-2xl leading-relaxed">
             Scientific research solutions to help healthcare institutions make better decisions about clinical and administrative aspects.
           </p>
@@ -148,10 +148,7 @@ export default function IndustryPage() {
                     className="border border-gray-200 rounded-lg p-5 flex flex-col"
                   >
                     <p className="text-xs text-gray-400 mb-1">Healthcare service</p>
-                    <p className="text-gray-700 text-sm leading-relaxed flex-1 mb-5">{para}</p>
-                    <button className="self-start text-sm font-semibold text-gray-800 border-b-2 border-gray-800 pb-0.5 hover:text-green-800 hover:border-green-800 transition-colors">
-                      Enquire Now
-                    </button>
+                    <p className="text-gray-700 text-sm leading-relaxed flex-1">{para}</p>
                   </div>
                 ))}
               </div>
@@ -160,10 +157,7 @@ export default function IndustryPage() {
                 <div className="mt-5">
                   <div className="border border-gray-200 rounded-lg p-5">
                     <p className="text-xs text-gray-400 mb-1">Healthcare service</p>
-                    <p className="text-gray-700 text-sm leading-relaxed mb-5">{section.body[2]}</p>
-                    <button className="self-start text-sm font-semibold text-gray-800 border-b-2 border-gray-800 pb-0.5 hover:text-green-800 hover:border-green-800 transition-colors">
-                      Enquire Now
-                    </button>
+                    <p className="text-gray-700 text-sm leading-relaxed">{section.body[2]}</p>
                   </div>
                 </div>
               )}

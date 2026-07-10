@@ -80,7 +80,7 @@ export default function Home() {
                   Journal of Artificial Intelligence in Medicine &amp; Public Health is a peer-reviewed, open-access journal publishing high-quality research and innovations that advance healthcare, artificial intelligence, and public health.
                 </p>
                 <p className="text-sm text-gray-700"><strong>Frequency</strong>: Quarterly</p>
-                <p className="text-sm text-gray-700"><strong>Access</strong>: Open Access</p>
+                <p className="text-sm text-gray-700"><strong>Access</strong>: Subscription / Fully Open Access</p>
                 <p className="text-sm text-gray-700"><strong>APC</strong>: No Fees</p>
               </div>
             </div>

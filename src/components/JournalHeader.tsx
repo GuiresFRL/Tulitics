@@ -53,11 +53,11 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
       {/* Journal Hero Banner */}
       <div style={{ background: 'linear-gradient(135deg, #0a2e2e 0%, #0d4a3a 50%, #0a3d2e 100%)' }} className="w-full">
         <div className="max-w-7xl mx-auto px-6 py-8 flex items-center gap-8">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 bg-white rounded-lg p-2 shadow-lg">
             <img
               src="/images/journal-cover.jpg"
               alt="Journal of Artificial Intelligence in Medicine & Public Health"
-              className="w-44 h-auto rounded shadow-lg"
+              className="w-44 h-auto rounded"
             />
           </div>
           <div>
@@ -67,7 +67,7 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
             {!subtitle && (
               <div className="space-y-1 text-sm text-white">
                 <p><span className="font-semibold">Frequency</span>: Quarterly</p>
-                <p><span className="font-semibold">Access</span>: Fully Open Access</p>
+                <p><span className="font-semibold">Access</span>: Subscription / Fully Open Access</p>
                 <p><span className="font-semibold">APC</span>: No Fees</p>
               </div>
             )}

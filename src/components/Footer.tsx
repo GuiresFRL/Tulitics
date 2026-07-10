@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div>
-            <img src="/images/logo.png" alt="Tulitics" className="h-10 mb-3" />
+            <img src="/images/logo.png" alt="Tulitics" className="h-10 mb-3 bg-white rounded px-2 py-1" />
             <p className="text-green-200 text-sm leading-relaxed">
               Advancing research through open-access publishing in medicine, public health, and AI.
             </p>
@@ -32,7 +32,6 @@ export default function Footer() {
               {[
                 ['Submit Manuscript', '/publish'],
                 ['Author Guidelines', '/journal/instruction-for-author'],
-                ['Publication Fees', '/journal/open-access-policy'],
                 ['Track Manuscript', '/publish'],
                 ['Reviewer Guidelines', '/journal/instruction-for-reviewer'],
               ].map(([label, href]) => (
@@ -61,8 +60,48 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        {/* Trust Badges */}
+        <div className="border-t border-white/10 pt-6 pb-6 flex flex-wrap justify-start gap-3">
+          {/* TrustedSite */}
+          <div className="flex items-center gap-1.5 bg-white rounded px-2 py-1">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="none">
+              <rect width="20" height="20" rx="3" fill="#4CAF50"/>
+              <path d="M4 10l4 4 8-8" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span className="text-[10px] font-bold text-gray-800">TrustedSite</span>
+          </div>
+
+          {/* GoDaddy Verified & Secured */}
+          <div className="flex items-center gap-1.5 rounded px-2 py-1" style={{ background: '#2d2d2d' }}>
+            <svg width="18" height="22" viewBox="0 0 28 32" fill="none">
+              <path d="M14 0L2 5v10c0 8.5 5.2 16.4 12 19 6.8-2.6 12-10.5 12-19V5L14 0z" fill="#4CAF50"/>
+              <path d="M10 12v-2a2 2 0 014 0v2" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+              <rect x="8" y="12" width="8" height="6" rx="1" fill="white" opacity="0.9"/>
+              <rect x="11" y="14" width="2" height="2" rx="0.5" fill="#4CAF50"/>
+            </svg>
+            <div>
+              <p className="text-gray-400 text-[7px] font-semibold tracking-widest uppercase">GODADDY.COM®</p>
+              <p className="text-white text-[9px] font-black leading-tight">VERIFIED &amp; SECURED</p>
+              <p className="text-gray-400 text-[7px] tracking-wider uppercase">VERIFY SECURITY</p>
+            </div>
+          </div>
+
+          {/* McAfee SECURE */}
+          <div className="flex items-center gap-1.5 bg-white rounded px-2 py-1">
+            <svg width="18" height="18" viewBox="0 0 28 28" fill="none">
+              <circle cx="14" cy="14" r="13" fill="#CC0000"/>
+              <circle cx="14" cy="14" r="13" stroke="#990000" strokeWidth="1"/>
+              <text x="14" y="18" textAnchor="middle" fill="white" fontSize="13" fontWeight="900" fontFamily="Arial">M</text>
+            </svg>
+            <div>
+              <p className="text-gray-800 text-[10px] font-black leading-tight">McAfee</p>
+              <p className="text-gray-600 text-[9px] font-semibold">SECURE™</p>
+            </div>
+          </div>
+        </div>
+
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-green-300">
-          <p>© {new Date().getFullYear()} Tulitics Publishing. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} – Tulitics is a trading name of Guires, a company registered.</p>
           <div className="flex gap-4">
             {[['Privacy Policy', '/privacy'], ['Terms of Use', '/terms'], ['Cookie Policy', '/cookies'], ['Accessibility', '/accessibility']].map(([label, href]) => (
               <Link key={label} href={href} className="hover:text-white transition-colors">{label}</Link>

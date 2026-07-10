@@ -22,9 +22,9 @@ const navItems = [
       { label: 'Submit an Article', href: '/journal/submit-an-article' },
     ],
   },
-  { label: 'Publish an Article', href: 'https://journal-management-system-omega.vercel.app/' },
   { label: 'Insights', href: '/insights' },
   { label: 'Support', href: '/support' },
+  { label: 'Publish an Article', href: 'https://journal-management-system-omega.vercel.app/', highlight: true },
 ]
 
 export default function Header() {
@@ -69,7 +69,10 @@ export default function Header() {
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap"
+                    className={item.highlight
+                      ? 'px-4 py-2 text-sm font-semibold text-white rounded whitespace-nowrap'
+                      : 'px-3 py-2 text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap'}
+                    style={item.highlight ? { background: '#0fb68c' } : {}}
                   >
                     {item.label}
                   </Link>
@@ -115,7 +118,10 @@ export default function Header() {
           <div className="lg:hidden border-t border-gray-200 bg-white px-4 py-3 space-y-1">
             {navItems.map((item) =>
               item.href ? (
-                <Link key={item.label} href={item.href} className="block py-2 text-sm font-medium text-gray-700 hover:text-green-800" onClick={() => setMobileOpen(false)}>
+                <Link key={item.label} href={item.href}
+                  className={item.highlight ? 'block py-2 text-sm font-semibold text-white px-3 rounded text-center' : 'block py-2 text-sm font-medium text-gray-700 hover:text-green-800'}
+                  style={item.highlight ? { background: '#0fb68c' } : {}}
+                  onClick={() => setMobileOpen(false)}>
                   {item.label}
                 </Link>
               ) : (

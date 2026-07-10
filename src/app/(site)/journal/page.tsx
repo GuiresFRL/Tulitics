@@ -29,7 +29,7 @@ export default function JournalsPage() {
             </p>
             <div className="flex flex-wrap gap-6 text-sm text-gray-700 mb-6">
               <span><strong>Frequency:</strong> Quarterly</span>
-              <span><strong>Access:</strong> Fully Open Access</span>
+              <span><strong>Access:</strong> Subscription / Fully Open Access</span>
               <span><strong>APC:</strong> No Fees</span>
               <span><strong>Review:</strong> Double-blind</span>
             </div>
