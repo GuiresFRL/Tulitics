@@ -74,8 +74,7 @@ export default function CompanyPage() {
               Worldwide
             </h1>
             <p className="text-gray-300 leading-relaxed text-lg max-w-lg">
-              Tulitics is a Chennai-based scholarly publishing organisation dedicated to making
-              cutting-edge research accessible to everyone — freely, transparently, and rapidly.
+              Tulitics is an emerging global publisher committed to excellence, innovation, and advancing knowledge across disciplines. Launching with its first peer-reviewed, open-access journal in AI medicine and public health, it provides a rigorous platform for high-quality research that drives scientific discovery and transforms healthcare. With plans to expand into engineering, management, economics, and other fields, the publisher is building a distinguished portfolio of multidisciplinary journals designed to shape global scholarship and deliver meaningful societal impact.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -123,15 +122,13 @@ export default function CompanyPage() {
             <div className="rounded-2xl p-6 border border-gray-100 shadow-sm">
               <h3 className="font-bold text-gray-900 mb-2 text-lg">Our Mission</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                To accelerate the translation of research into real-world impact by providing a rigorous,
-                inclusive, and free publishing platform for scholars worldwide.
+                To publish high-quality, peer-reviewed, open-access research with integrity, foster interdisciplinary collaboration, and make knowledge freely accessible to create meaningful global impact.
               </p>
             </div>
             <div className="rounded-2xl p-6 border border-gray-100 shadow-sm">
               <h3 className="font-bold text-gray-900 mb-2 text-lg">Our Vision</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                A world where every researcher — regardless of geography, institution, or funding — can
-                publish freely and reach a global audience without paywalls or prohibitive costs.
+                To be a global leader in advancing knowledge and driving innovation across all academic disciplines.
               </p>
             </div>
             <div className="rounded-2xl p-6" style={{ background: '#ecfdf5' }}>

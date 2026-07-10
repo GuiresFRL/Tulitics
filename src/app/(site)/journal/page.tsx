@@ -20,9 +20,12 @@ export default function JournalsPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3 leading-snug">
               Journal of Artificial Intelligence in Medicine &amp; Public Health
             </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-2 text-yellow-600">Coming Soon</p>
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
-              A peer-reviewed, fully open-access quarterly journal dedicated to publishing high-quality research at the intersection of
-              AI, medicine, and public health. No fees for authors or readers.
+              Journal of Artificial Intelligence in Medicine and Public Health, the official journal of Tulitics, is an upcoming multidisciplinary, peer-reviewed, open access journal focused on the integration of medicine and artificial intelligence. The journal will publish high-quality research, reviews, and case reports covering clinical research, public health, digital health innovations, and emerging biomedical technologies.
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              With a strong emphasis on accessibility and global impact, the journal will offer free submission and publication, ensuring the wide dissemination of knowledge that advances healthcare and informs policy worldwide.
             </p>
             <div className="flex flex-wrap gap-6 text-sm text-gray-700 mb-6">
               <span><strong>Frequency:</strong> Quarterly</span>
@@ -41,14 +44,20 @@ export default function JournalsPage() {
           </div>
         </div>
 
-        {/* Coming Soon */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {['Journal of Management', 'Journal of Engineering'].map(title => (
-            <div key={title} className="rounded-2xl p-8 text-white text-center" style={{ background: '#0a5c3c' }}>
-              <h3 className="text-xl font-bold mb-2">{title}</h3>
-              <p className="text-green-200 text-sm">Coming Soon</p>
-            </div>
-          ))}
+        {/* Upcoming Journals */}
+        <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-3">Upcoming Journals</h2>
+          <p className="text-gray-600 text-sm leading-relaxed mb-6">
+            We are currently developing several new peer-reviewed journals across engineering, management, and interdisciplinary research. Further details will be announced soon.
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            {['Journal of Management', 'Journal of Engineering'].map(title => (
+              <div key={title} className="rounded-xl p-6 text-white text-center" style={{ background: '#0a5c3c' }}>
+                <h3 className="text-lg font-bold mb-2">{title}</h3>
+                <p className="text-green-200 text-sm">Coming Soon</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
