@@ -3,36 +3,12 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const navItems = [
-  {
-    label: 'About',
-    children: [
-      { label: 'About Us', href: '/journal/about-us' },
-      { label: 'Aim and Scope', href: '/journal/aim-and-scope' },
-      { label: 'Editorial and Advisory Board', href: '/journal/editorial-and-advisory-board' },
-    ],
-  },
-  {
-    label: 'Article / Issues',
-    children: [
-      { label: 'Current Issue', href: '/journal/current-issue' },
-      { label: 'All Issues', href: '/journal/all-issues' },
-    ],
-  },
-  {
-    label: 'Editorial Policies & Guidelines',
-    children: [
-      { label: 'Editorial Policies', href: '/journal/editorial-policies' },
-      { label: 'Plagiarism Policies', href: '/journal/plagiarism-policy' },
-      { label: 'Peer Review Policies', href: '/journal/peer-review-policies' },
-      { label: 'Ethics Approval Policy', href: '/journal/ethics-approval-policy' },
-      { label: 'Authorship Policy', href: '/journal/authorship-policy' },
-      { label: 'Conflict of Interest', href: '/journal/conflict-of-interest' },
-      { label: 'Citation Manipulation Policy', href: '/journal/citation-manipulation-policy' },
-      { label: 'Corrections and Retractions Policy', href: '/journal/corrections-and-retractions' },
-      { label: 'Open Access Policy', href: '/journal/open-access-policy' },
-      { label: 'Article Processing Charges (APC) Policy', href: '/journal/article-processing-charges' },
-    ],
-  },
+  { label: 'Home', href: '/journal/ai-medicine' },
+  { label: 'Aim and Scope', href: '/journal/aim-and-scope' },
+  { label: 'Editorial & Advisory Board', href: '/journal/editorial-and-advisory-board' },
+  { label: 'Journal Information', href: '/journal/journal-information' },
+  { label: 'APC', href: '/journal/article-processing-charges' },
+  { label: 'Editorial Policies & Guidelines', href: '/journal/editorial-policies' },
   {
     label: 'Information For',
     children: [
@@ -40,7 +16,7 @@ const navItems = [
       { label: 'Instruction for Reviewer', href: '/journal/instruction-for-reviewer' },
     ],
   },
-  { label: 'Contact us', href: '/journal/contact-us' },
+  { label: 'Contact Us', href: '/journal/contact-us' },
 ]
 
 export default function JournalHeader({ subtitle }: { subtitle?: string }) {
