@@ -5,75 +5,28 @@ import { useState } from 'react'
 const newsTabs = [
   {
     label: "Launch of Tulitics' First Journal",
-    title: "Launch of Tulitics' First Journal",
-    body: `The Journal of Artificial Intelligence in Medicine & Public Health by Tulitics is set to officially launch in June 2026, marking a significant step toward advancing interdisciplinary research at the convergence of healthcare and artificial intelligence.`,
-    highlights: [
-      'A global platform dedicated to AI-driven innovation in healthcare systems.',
-      'Focus on bridging theoretical research with real-world clinical and public health applications.',
-      'Encourages interdisciplinary collaboration between clinicians, data scientists, epidemiologists, and AI researchers.',
-      'Aims to support evidence-based innovation for improving global health outcomes.',
-      'Emphasis on ethical, responsible, and transparent AI in healthcare.',
-    ],
+    body: `Tulitics is proud to announce the upcoming launch of its first journal, Journal of Artificial Intelligence in Medicine & Public Health, in June 2026. This peer-reviewed, open-access journal will feature cutting-edge research at the intersection of medicine, public health, and AI-driven healthcare solutions.`,
   },
   {
     label: 'Call for Papers / Special Issues',
-    title: 'Call for Papers / Special Issues',
-    body: 'We are inviting submissions for our inaugural special issue on AI in Cancer Diagnosis. Submission deadline: April 30, 2026.',
-    highlights: [
-      'Focus: AI applications in oncology and cancer diagnostics.',
-      'Open to original research, reviews, and case reports.',
-      'No article processing charges.',
-      'Fast peer review — 1–2 week initial decision.',
-    ],
+    body: 'Journal of Artificial Intelligence in Medicine & Public Health is now accepting submissions. Researchers worldwide are invited to submit original research, reviews, case studies, and short communications. All submissions undergo a thorough peer-review process to ensure the highest standards of scientific rigor and integrity.',
   },
   {
     label: 'Editorial Board Announcements',
-    title: 'Editorial Board Announcements',
-    body: 'We welcome distinguished researchers and clinicians to our growing editorial board. Our board brings together expertise across AI, medicine, and public health.',
-    highlights: [
-      'Editor-in-Chief appointment announced.',
-      'International advisory board members welcomed.',
-      'Reviewers from 20+ countries on board.',
-    ],
+    body: 'We are assembling a distinguished editorial board for Journal of Artificial Intelligence in Medicine & Public Health, featuring leading experts in medicine, public health, AI, and healthcare innovation. Their expertise ensures rigorous peer review, academic integrity, and the publication of high-quality research. Stay tuned for official appointments and profiles of our editors.',
   },
   {
     label: 'Events & Conferences',
-    title: 'Events & Conferences',
-    body: 'Tulitics will participate in and sponsor major international medical and AI conferences in 2026.',
-    highlights: [
-      'AI in Medicine Summit — Chennai, July 2026.',
-      'Global Public Health Congress — virtual, September 2026.',
-      'Digital Health Innovation Forum — London, November 2026.',
-    ],
+    body: 'Tulitics is planning a series of webinars, workshops, and conferences to engage the global research community. These upcoming events will focus on innovations in medicine, public health, AI, and multidisciplinary research. They aim to provide opportunities for knowledge sharing, networking, and fostering collaboration among researchers, practitioners, and thought leaders worldwide. Details on dates, topics, and registration will be announced soon.',
   },
   {
     label: 'Join as Reviewer',
-    title: 'Join as Reviewer',
-    body: 'Contribute to advancing medical research. Apply to join our reviewer network today. We welcome researchers across all relevant fields.',
-    highlights: [
-      'Double-blind peer review process.',
-      'Recognition and certificates for reviewers.',
-      'Flexible, asynchronous reviews.',
-      'Email contact@tulitics.com with your CV.',
-    ],
+    body: 'We invite qualified researchers and experts to join our reviewer panel. By contributing to the peer-review process, you help uphold the highest standards of scientific rigor and integrity while gaining recognition as a valued member of the academic community. Interested candidates can apply online to become a reviewer.',
   },
   {
     label: 'Research Highlights',
-    title: 'Research Highlights',
-    body: 'Discover the latest breakthrough research published in our journal, spanning AI diagnostics, public health policy, and digital health.',
-    highlights: [
-      'Deep learning for early diabetic retinopathy detection.',
-      'AI-assisted triage in emergency departments.',
-      'Predictive analytics for hospital readmissions.',
-    ],
+    body: 'Journal of Artificial Intelligence in Medicine & Public Health will showcase innovative research across all areas of medicine, public health, and healthcare technology. The journal highlights studies that combine clinical insights, data-driven approaches, and multidisciplinary collaboration to improve healthcare outcomes, inform policy, and drive global impact. This section will feature cutting-edge findings, emerging trends, and notable contributions that shape the future of medical research.',
   },
-]
-
-const benefits = [
-  { icon: '/images/icon-review.jpg',     title: 'Fast & Transparent Review Process' },
-  { icon: '/images/icon-openaccess.png', title: 'Open Access Visibility' },
-  { icon: '/images/icon-editorial.png',  title: 'Experienced Editorial Board' },
-  { icon: '/images/icon-editorial.png',  title: 'Ethical Publishing Standards' },
 ]
 
 export default function Home() {
@@ -113,7 +66,7 @@ export default function Home() {
       <section className="py-10 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold mb-1 text-gray-900">Our journals</h2>
-          <p className="text-gray-500 text-sm mb-6">Latest breakthroughs in AI-powered healthcare and medicine</p>
+          <p className="text-gray-500 text-sm mb-6">Tulitics is a global scholarly publisher advancing high-quality, peer-reviewed open-access research that promotes academic integrity and knowledge sharing worldwide.</p>
           <div className="grid md:grid-cols-4 gap-5">
             <div className="md:col-span-2 rounded-2xl border border-gray-200 shadow-sm p-5 flex gap-4 bg-white">
               <div className="flex-shrink-0">
@@ -124,11 +77,10 @@ export default function Home() {
                   Journal of Artificial Intelligence in Medicine &amp; Public Health
                 </h3>
                 <p className="text-sm text-gray-500 mb-2 leading-relaxed">
-                  is a peer-reviewed, open-access journal publishing high-quality research and innovations that advance
-                  healthcare, artificial intelligence, and public health.
+                  Journal of Artificial Intelligence in Medicine &amp; Public Health is a peer-reviewed, open-access journal publishing high-quality research and innovations that advance healthcare, artificial intelligence, and public health.
                 </p>
                 <p className="text-sm text-gray-700"><strong>Frequency</strong>: Quarterly</p>
-                <p className="text-sm text-gray-700"><strong>Access</strong>: Fully Open Access</p>
+                <p className="text-sm text-gray-700"><strong>Access</strong>: Open Access</p>
                 <p className="text-sm text-gray-700"><strong>APC</strong>: No Fees</p>
               </div>
             </div>
@@ -139,25 +91,7 @@ export default function Home() {
                 style={{ background: '#0a5c3c' }}
               >
                 <h3 className="text-xl font-bold mb-3">{j.title}</h3>
-                <p className="text-green-200 text-sm">Coming Soon</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── WHY PUBLISHING WITH US ───────────────────────────────── */}
-      <section className="py-10 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold mb-1 text-gray-900">Why Publishing with Us</h2>
-          <p className="text-gray-500 text-sm mb-6">Latest breakthroughs in AI-powered healthcare and medicine</p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {benefits.map(b => (
-              <div key={b.title} className="bg-white rounded-xl p-5 text-center shadow-sm border border-gray-100">
-                <div className="w-14 h-14 mx-auto mb-3 flex items-center justify-center rounded-xl overflow-hidden" style={{ background: '#e6f7f2' }}>
-                  <img src={b.icon} alt={b.title} className="w-9 h-9 object-contain" />
-                </div>
-                <h3 className="font-semibold text-gray-900 text-sm leading-snug">{b.title}</h3>
+                <p className="text-green-200 text-sm">Launching Soon</p>
               </div>
             ))}
           </div>
@@ -168,9 +102,11 @@ export default function Home() {
       <section className="py-10 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold mb-1 text-gray-900">Latest News &amp; Announcements</h2>
-          <p className="text-gray-500 text-sm mb-6">Latest breakthroughs in AI-powered healthcare and medicine</p>
-          <div className="flex flex-col md:flex-row border border-gray-200 rounded-xl overflow-hidden">
+          <div className="flex flex-col md:flex-row border border-gray-200 rounded-xl overflow-hidden mt-4">
             <div className="md:w-60 flex-shrink-0 border-r border-gray-200 bg-white">
+              <div className="px-4 py-3 text-xs font-bold uppercase tracking-widest text-gray-400 border-b border-gray-100">
+                News and Announcements
+              </div>
               {newsTabs.map((tab, i) => (
                 <button
                   key={tab.label}
@@ -186,17 +122,8 @@ export default function Home() {
               ))}
             </div>
             <div className="flex-1 p-6">
-              <h3 className="text-base font-bold text-gray-900 mb-2">{newsTabs[activeTab].title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-3">{newsTabs[activeTab].body}</p>
-              <p className="font-bold text-gray-900 text-sm mb-2">Key Highlights:</p>
-              <ul className="space-y-1.5">
-                {newsTabs[activeTab].highlights.map(h => (
-                  <li key={h} className="flex items-start gap-2 text-sm text-gray-600">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gray-400 flex-shrink-0" />
-                    {h}
-                  </li>
-                ))}
-              </ul>
+              <h3 className="text-base font-bold text-gray-900 mb-3">{newsTabs[activeTab].label}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{newsTabs[activeTab].body}</p>
             </div>
           </div>
         </div>

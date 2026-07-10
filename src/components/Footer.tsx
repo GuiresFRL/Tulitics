@@ -41,14 +41,12 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider text-green-400">Resources</h4>
+            <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider text-green-400">Quick Links</h4>
             <ul className="space-y-2">
               {[
-                ['Browse Journal', '/journal'],
-                ['Browse Articles', '/journal/ai-medicine'],
-                ['Research Topics', '/insights'],
-                ['Special Issues', '/journal/current-issue'],
-                ['Conference Papers', '/insights'],
+                ['Journals', '/journal'],
+                ['News & Announcements', '/journal/ai-medicine'],
+                ['Publish an article', '/publish'],
               ].map(([label, href]) => (
                 <li key={label}><Link href={href} className="text-sm text-green-100 hover:text-white transition-colors">{label}</Link></li>
               ))}
