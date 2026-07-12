@@ -25,7 +25,7 @@ const navItems = [
   },
   { label: 'Insights', href: '/insights' },
   { label: 'Support', href: '/support' },
-  { label: 'Sign In', href: 'https://journal-management-system-omega.vercel.app/login', highlight: true },
+  { label: 'Sign In', href: 'https://journal-management-system-omega.vercel.app/', highlight: true },
 ]
 
 export default function Header() {
@@ -71,7 +71,7 @@ export default function Header() {
               >
                 {item.href && item.highlight ? (
                   <Link
-                    href={isJournal ? 'https://journal-management-system-omega.vercel.app/login' : item.href}
+                    href={isJournal ? 'https://journal-management-system-omega.vercel.app/' : item.href}
                     className="px-4 py-2 text-sm font-semibold text-white rounded whitespace-nowrap"
                     style={{ background: '#0a2e2e' }}
                   >
