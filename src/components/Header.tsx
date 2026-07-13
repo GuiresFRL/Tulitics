@@ -72,9 +72,12 @@ export default function Header() {
                 {item.href && item.highlight ? (
                   <Link
                     href={isJournal ? 'https://journal-management-system-omega.vercel.app/' : item.href}
-                    className="px-4 py-2 text-sm font-semibold text-white rounded whitespace-nowrap"
+                    className="flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-white rounded whitespace-nowrap"
                     style={{ background: '#0a2e2e' }}
                   >
+                    <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={1.6} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3L2 9h20L12 3zM4 9v10h16V9M4 19h16M9 12v5M12 12v5M15 12v5" />
+                    </svg>
                     {isJournal ? 'Login / Register' : item.label}
                   </Link>
                 ) : item.href ? (
