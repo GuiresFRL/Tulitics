@@ -1,7 +1,19 @@
 import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 
-export const metadata: Metadata = { title: 'Journal Information – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Journal Information | JAIMPH – Tulitics',
+  description: 'Key information about the Journal of Artificial Intelligence in Medicine and Public Health (JAIMPH) — publication frequency, ISSN, open access policy, article processing charges, and indexing details.',
+  keywords: ['JAIMPH journal information', 'journal details', 'ISSN', 'publication frequency', 'open access journal', 'journal indexing', 'APC fees JAIMPH'],
+  alternates: { canonical: 'https://guires.info/journal/journal-information' },
+  openGraph: {
+    title: 'Journal Information | JAIMPH – Tulitics',
+    description: 'Key details about JAIMPH — frequency, ISSN, open access policy, and indexing.',
+    url: 'https://guires.info/journal/journal-information',
+    type: 'article',
+  },
+  twitter: { card: 'summary', title: 'Journal Information | JAIMPH', description: 'Publication details, ISSN, and indexing information for JAIMPH.' },
+}
 
 const infoRows = [
   { label: 'Publication Frequency', value: 'Quarterly – The journal publishes four issues per year.' },

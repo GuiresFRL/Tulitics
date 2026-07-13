@@ -2,7 +2,19 @@ import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 import Link from 'next/link'
 
-export const metadata: Metadata = { title: 'News and Announcements – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'News & Announcements | JAIMPH – Tulitics',
+  description: 'Stay updated with the latest news and announcements from JAIMPH — including calls for papers, special issues, editorial updates, and journal milestones.',
+  keywords: ['JAIMPH news', 'journal announcements', 'call for papers', 'special issues', 'journal updates', 'JAIMPH latest news'],
+  alternates: { canonical: 'https://guires.info/journal/news-and-announcements' },
+  openGraph: {
+    title: 'News & Announcements | JAIMPH – Tulitics',
+    description: 'Latest news, calls for papers, and announcements from JAIMPH.',
+    url: 'https://guires.info/journal/news-and-announcements',
+    type: 'website',
+  },
+  twitter: { card: 'summary', title: 'JAIMPH News & Announcements', description: 'Latest calls for papers and journal announcements from JAIMPH.' },
+}
 
 const items = [
   { label: 'Join as an editorial board member', href: '/journal/join-editorial-board' },

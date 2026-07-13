@@ -1,7 +1,13 @@
 import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 
-export const metadata: Metadata = { title: 'Join as Editorial Board Member – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Join the Editorial Board | JAIMPH – Tulitics',
+  description: 'Apply to join the Editorial or Advisory Board of JAIMPH. We welcome experts in artificial intelligence, medicine, and public health to contribute to peer review and journal governance.',
+  keywords: ['join editorial board', 'JAIMPH editorial board application', 'become journal editor', 'advisory board membership', 'academic journal board'],
+  alternates: { canonical: 'https://guires.info/journal/join-editorial-board' },
+  openGraph: { title: 'Join the Editorial Board | JAIMPH', url: 'https://guires.info/journal/join-editorial-board', type: 'website' },
+}
 
 export default function JoinEditorialBoardPage() {
   return (

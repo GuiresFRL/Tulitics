@@ -1,6 +1,18 @@
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = { title: 'Support – Tulitics' }
+export const metadata: Metadata = {
+  title: 'Support | Author & Editorial Assistance – Tulitics',
+  description: 'Contact Tulitics support for editorial queries, author and submission assistance, partnership inquiries, and general information. Our team is here to help authors, reviewers, and institutions.',
+  keywords: ['Tulitics support', 'author support', 'editorial assistance', 'submission help', 'contact Tulitics', 'publisher support', 'journal help'],
+  alternates: { canonical: 'https://guires.info/support' },
+  openGraph: {
+    title: 'Support | Tulitics',
+    description: 'Get help from Tulitics for editorial queries, author support, and partnership inquiries.',
+    url: 'https://guires.info/support',
+    type: 'website',
+  },
+  twitter: { card: 'summary', title: 'Support | Tulitics', description: 'Author, editorial, and partnership support from Tulitics.' },
+}
 
 const departments = [
   {

@@ -1,7 +1,19 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = { title: 'Journals – Tulitics' }
+export const metadata: Metadata = {
+  title: 'Our Journals | Open Access Medical Journals – Tulitics',
+  description: 'Browse peer-reviewed open-access journals published by Tulitics. Featuring the Journal of Artificial Intelligence in Medicine and Public Health (JAIMPH) and upcoming titles in healthcare and life sciences.',
+  keywords: ['Tulitics journals', 'open access journals', 'medical journals', 'JAIMPH', 'AI healthcare journal', 'peer reviewed journals', 'scholarly journals list'],
+  alternates: { canonical: 'https://guires.info/journal' },
+  openGraph: {
+    title: 'Our Journals | Open Access Medical Journals – Tulitics',
+    description: 'Peer-reviewed open-access journals from Tulitics covering AI, medicine, and public health.',
+    url: 'https://guires.info/journal',
+    type: 'website',
+  },
+  twitter: { card: 'summary_large_image', title: 'Journals | Tulitics', description: 'Open-access peer-reviewed journals from Tulitics in medicine, AI, and public health.' },
+}
 
 export default function JournalsPage() {
   return (

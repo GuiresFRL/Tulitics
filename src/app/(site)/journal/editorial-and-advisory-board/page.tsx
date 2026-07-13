@@ -1,7 +1,19 @@
 import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 
-export const metadata: Metadata = { title: 'Editorial and Advisory Board – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Editorial & Advisory Board | JAIMPH – Tulitics',
+  description: 'Meet the Editorial and Advisory Board of JAIMPH. Our board comprises leading experts in artificial intelligence, medicine, and public health who guide the journal\'s scientific direction and editorial standards.',
+  keywords: ['JAIMPH editorial board', 'advisory board', 'journal editors', 'peer review committee', 'medical journal editorial team', 'AI healthcare experts'],
+  alternates: { canonical: 'https://guires.info/journal/editorial-and-advisory-board' },
+  openGraph: {
+    title: 'Editorial & Advisory Board | JAIMPH – Tulitics',
+    description: 'Leading experts in AI, medicine, and public health guiding JAIMPH\'s scientific direction and editorial standards.',
+    url: 'https://guires.info/journal/editorial-and-advisory-board',
+    type: 'article',
+  },
+  twitter: { card: 'summary', title: 'Editorial & Advisory Board | JAIMPH', description: 'Meet the expert editorial and advisory board of JAIMPH.' },
+}
 
 const requirements = [
   'Updated Curriculum Vitae (CV)',

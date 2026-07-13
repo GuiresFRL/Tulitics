@@ -1,7 +1,13 @@
 import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 
-export const metadata: Metadata = { title: 'Call for Papers – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Call for Papers | JAIMPH – Tulitics',
+  description: 'JAIMPH invites original research manuscripts on artificial intelligence in medicine and public health. Submit your work to a peer-reviewed, fully open-access journal with no publication fees.',
+  keywords: ['call for papers', 'JAIMPH submissions', 'submit research', 'AI medicine call for papers', 'open access journal submissions', 'research manuscript submission'],
+  alternates: { canonical: 'https://guires.info/journal/call-for-papers' },
+  openGraph: { title: 'Call for Papers | JAIMPH – Tulitics', url: 'https://guires.info/journal/call-for-papers', type: 'website' },
+}
 
 export default function CallForPapersPage() {
   return (

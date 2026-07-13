@@ -1,7 +1,13 @@
 import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 
-export const metadata: Metadata = { title: 'Join as Reviewer – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Become a Reviewer | JAIMPH – Tulitics',
+  description: 'Join the JAIMPH reviewer panel. We invite researchers and clinicians with expertise in AI, medicine, and public health to contribute to the peer review process for this open-access journal.',
+  keywords: ['become reviewer', 'JAIMPH reviewer application', 'peer reviewer', 'journal reviewer', 'academic peer review', 'reviewer panel'],
+  alternates: { canonical: 'https://guires.info/journal/join-reviewer' },
+  openGraph: { title: 'Become a Reviewer | JAIMPH', url: 'https://guires.info/journal/join-reviewer', type: 'website' },
+}
 
 export default function JoinReviewerPage() {
   return (

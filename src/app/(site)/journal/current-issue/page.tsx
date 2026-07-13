@@ -2,7 +2,19 @@ import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 import Link from 'next/link'
 
-export const metadata: Metadata = { title: 'Current Issue – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Current Issue | JAIMPH – Tulitics',
+  description: 'Read the latest issue of the Journal of Artificial Intelligence in Medicine and Public Health (JAIMPH). Browse open-access articles on AI-driven healthcare, clinical research, and public health innovation.',
+  keywords: ['JAIMPH current issue', 'latest articles', 'current journal issue', 'AI medicine articles', 'open access articles', 'new research JAIMPH'],
+  alternates: { canonical: 'https://guires.info/journal/current-issue' },
+  openGraph: {
+    title: 'Current Issue | JAIMPH – Tulitics',
+    description: 'Latest open-access articles from JAIMPH on AI, medicine, and public health.',
+    url: 'https://guires.info/journal/current-issue',
+    type: 'website',
+  },
+  twitter: { card: 'summary', title: 'Current Issue | JAIMPH', description: 'Latest research articles from JAIMPH on AI, healthcare, and public health.' },
+}
 
 const articles = [
   { type: 'Research Article', title: 'Deep Learning Models for Early Detection of Diabetic Retinopathy in Low-Resource Settings', authors: 'Ramesh K, Sharma P, Patel A', keywords: ['Deep Learning', 'Diabetic Retinopathy', 'AI Diagnostics'], doi: '10.1016/jaimph.2026.05.001', date: 'May 2026' },

@@ -1,6 +1,13 @@
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = { title: 'Terms & Conditions – Tulitics' }
+export const metadata: Metadata = {
+  title: 'Terms & Conditions | Tulitics',
+  description: 'Read the Tulitics Terms and Conditions — governing the use of our websites, journal platforms, and publishing services. Covers author responsibilities, publication ethics, user conduct, and intellectual property.',
+  keywords: ['Tulitics terms and conditions', 'publisher terms', 'website terms of use', 'author agreement', 'publication terms', 'user conduct policy'],
+  alternates: { canonical: 'https://guires.info/terms' },
+  openGraph: { title: 'Terms & Conditions | Tulitics', url: 'https://guires.info/terms', type: 'website' },
+  robots: { index: true, follow: false },
+}
 
 const sections = [
   {

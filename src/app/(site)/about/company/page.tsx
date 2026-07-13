@@ -1,7 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-export const metadata: Metadata = { title: 'About Tulitics – Scholarly Publishing Platform' }
+export const metadata: Metadata = {
+  title: 'About Tulitics | Scholarly Publishing Organisation',
+  description: 'Learn about Tulitics — a scholarly publishing organisation committed to advancing high-quality, peer-reviewed open-access research in medicine, artificial intelligence, and public health. Discover our vision, mission, and publishing values.',
+  keywords: ['about Tulitics', 'scholarly publisher', 'open access publisher', 'academic publishing company', 'medical publisher', 'Tulitics mission', 'Tulitics vision'],
+  alternates: { canonical: 'https://guires.info/about/company' },
+  openGraph: {
+    title: 'About Tulitics | Scholarly Publishing Organisation',
+    description: 'Tulitics advances high-quality, peer-reviewed open-access research in medicine, AI, and public health.',
+    url: 'https://guires.info/about/company',
+    type: 'website',
+  },
+  twitter: { card: 'summary', title: 'About Tulitics', description: 'A scholarly publishing organisation advancing open-access research in medicine, AI, and public health.' },
+}
 
 const values = [
   {

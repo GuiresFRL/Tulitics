@@ -1,6 +1,13 @@
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = { title: 'Accessibility Statement – Tulitics' }
+export const metadata: Metadata = {
+  title: 'Accessibility Statement | Tulitics',
+  description: 'Tulitics is committed to making its websites and journal platforms accessible to all users, including individuals with disabilities. Read our accessibility statement and WCAG compliance efforts.',
+  keywords: ['Tulitics accessibility', 'WCAG compliance', 'website accessibility', 'accessible publishing', 'disability access'],
+  alternates: { canonical: 'https://guires.info/accessibility' },
+  openGraph: { title: 'Accessibility Statement | Tulitics', url: 'https://guires.info/accessibility', type: 'website' },
+  robots: { index: true, follow: false },
+}
 
 const paras = [
   'Tulitics Publisher is committed to ensuring that its websites and journal platforms are accessible to all users, including individuals with disabilities. We strive to provide a user-friendly experience that allows equal access to scholarly content, submission systems, and publication resources.',

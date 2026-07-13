@@ -1,7 +1,19 @@
 import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 
-export const metadata: Metadata = { title: 'Article Processing Charges – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Article Processing Charges (APC) | JAIMPH – Tulitics',
+  description: 'JAIMPH charges no article processing fees. Publishing in the Journal of Artificial Intelligence in Medicine and Public Health is completely free — no submission fees, no publication charges, no APC.',
+  keywords: ['article processing charges', 'APC', 'no publication fees', 'free to publish', 'JAIMPH APC', 'open access no fees', 'waived APC medical journal'],
+  alternates: { canonical: 'https://guires.info/journal/article-processing-charges' },
+  openGraph: {
+    title: 'Article Processing Charges (APC) | JAIMPH – Tulitics',
+    description: 'No article processing charges — publishing in JAIMPH is completely free for all authors.',
+    url: 'https://guires.info/journal/article-processing-charges',
+    type: 'article',
+  },
+  twitter: { card: 'summary', title: 'No APC | JAIMPH', description: 'JAIMPH charges zero article processing fees. Publish for free.' },
+}
 
 export default function APCPage() {
   return (

@@ -1,7 +1,19 @@
 import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 
-export const metadata: Metadata = { title: 'Editorial Policies & Guidelines – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Editorial Policies & Guidelines | JAIMPH – Tulitics',
+  description: 'JAIMPH editorial policies covering plagiarism, peer review, ethics approval, authorship, conflict of interest, citation manipulation, corrections and retractions, and open access — aligned with international publishing standards.',
+  keywords: ['editorial policies', 'plagiarism policy', 'peer review policy', 'ethics approval', 'authorship policy', 'conflict of interest', 'open access policy', 'JAIMPH policies', 'publication ethics'],
+  alternates: { canonical: 'https://guires.info/journal/editorial-policies' },
+  openGraph: {
+    title: 'Editorial Policies & Guidelines | JAIMPH – Tulitics',
+    description: 'Comprehensive editorial policies for JAIMPH — plagiarism, peer review, ethics, authorship, and open access guidelines.',
+    url: 'https://guires.info/journal/editorial-policies',
+    type: 'article',
+  },
+  twitter: { card: 'summary', title: 'Editorial Policies | JAIMPH', description: 'Full editorial policies for JAIMPH including ethics, plagiarism, and peer review standards.' },
+}
 
 const policies = [
   {

@@ -1,7 +1,19 @@
 import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 
-export const metadata: Metadata = { title: 'Contact Us – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Contact Us | JAIMPH – Tulitics',
+  description: 'Get in touch with the JAIMPH editorial team. Contact us for manuscript submissions, editorial queries, reviewer inquiries, or partnership opportunities.',
+  keywords: ['contact JAIMPH', 'editorial office', 'manuscript inquiry', 'reviewer contact', 'journal contact', 'Tulitics contact'],
+  alternates: { canonical: 'https://guires.info/journal/contact-us' },
+  openGraph: {
+    title: 'Contact Us | JAIMPH – Tulitics',
+    description: 'Contact the JAIMPH editorial team for submissions, reviews, or partnerships.',
+    url: 'https://guires.info/journal/contact-us',
+    type: 'website',
+  },
+  twitter: { card: 'summary', title: 'Contact JAIMPH', description: 'Reach the JAIMPH editorial office for queries, submissions, and partnerships.' },
+}
 
 const contacts = [
   {

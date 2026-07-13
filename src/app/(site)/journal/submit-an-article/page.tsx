@@ -2,7 +2,19 @@ import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 import Link from 'next/link'
 
-export const metadata: Metadata = { title: 'Submit an Article – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Submit a Manuscript | JAIMPH – Tulitics',
+  description: 'Submit your research manuscript to JAIMPH — the Journal of Artificial Intelligence in Medicine and Public Health. Follow our step-by-step submission guide for a smooth and efficient submission process.',
+  keywords: ['submit manuscript', 'submit article JAIMPH', 'manuscript submission guide', 'how to submit research', 'journal submission', 'open access submission', 'JAIMPH submission'],
+  alternates: { canonical: 'https://guires.info/journal/submit-an-article' },
+  openGraph: {
+    title: 'Submit a Manuscript | JAIMPH – Tulitics',
+    description: 'Step-by-step guide to submitting your manuscript to JAIMPH — open access, no fees.',
+    url: 'https://guires.info/journal/submit-an-article',
+    type: 'article',
+  },
+  twitter: { card: 'summary', title: 'Submit to JAIMPH', description: 'Submit your research to JAIMPH — peer-reviewed, open access, no fees.' },
+}
 
 const steps = [
   {

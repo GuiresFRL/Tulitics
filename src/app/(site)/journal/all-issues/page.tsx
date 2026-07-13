@@ -2,7 +2,13 @@ import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 import Link from 'next/link'
 
-export const metadata: Metadata = { title: 'All Issues – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Archives & All Issues | JAIMPH – Tulitics',
+  description: 'Browse all published issues of the Journal of Artificial Intelligence in Medicine and Public Health (JAIMPH). Access the complete archive of open-access research articles.',
+  keywords: ['JAIMPH archives', 'all issues', 'journal archive', 'past issues', 'JAIMPH volumes', 'open access archive'],
+  alternates: { canonical: 'https://guires.info/journal/all-issues' },
+  openGraph: { title: 'Archives & All Issues | JAIMPH', url: 'https://guires.info/journal/all-issues', type: 'website' },
+}
 
 export default function AllIssuesPage() {
   return (

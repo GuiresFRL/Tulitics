@@ -1,6 +1,13 @@
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = { title: 'Privacy Policy – Tulitics' }
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Tulitics',
+  description: 'Read the Tulitics Privacy Policy — how we collect, use, and protect personal data from authors, reviewers, editors, and website visitors in accordance with data protection principles.',
+  keywords: ['Tulitics privacy policy', 'data protection', 'personal data', 'publisher privacy', 'data collection policy'],
+  alternates: { canonical: 'https://guires.info/privacy' },
+  openGraph: { title: 'Privacy Policy | Tulitics', url: 'https://guires.info/privacy', type: 'website' },
+  robots: { index: true, follow: false },
+}
 
 const sections = [
   {

@@ -1,7 +1,19 @@
 import type { Metadata } from 'next'
 import JournalHeader from '@/components/JournalHeader'
 
-export const metadata: Metadata = { title: 'Aim and Scope – JAIMPH' }
+export const metadata: Metadata = {
+  title: 'Aim and Scope | JAIMPH – Tulitics',
+  description: 'Discover the aim and scope of the Journal of Artificial Intelligence in Medicine and Public Health (JAIMPH) — a peer-reviewed open-access journal advancing AI-driven healthcare research, clinical innovation, and public health science.',
+  keywords: ['JAIMPH aim and scope', 'AI in medicine journal', 'artificial intelligence public health', 'peer reviewed medical journal', 'open access healthcare research', 'health informatics journal scope'],
+  alternates: { canonical: 'https://guires.info/journal/aim-and-scope' },
+  openGraph: {
+    title: 'Aim and Scope | JAIMPH – Tulitics',
+    description: 'JAIMPH publishes peer-reviewed research at the intersection of artificial intelligence, medicine, and public health.',
+    url: 'https://guires.info/journal/aim-and-scope',
+    type: 'article',
+  },
+  twitter: { card: 'summary', title: 'Aim and Scope | JAIMPH', description: 'Scope of JAIMPH — AI in medicine, public health, and clinical research.' },
+}
 
 const areas = [
   {
