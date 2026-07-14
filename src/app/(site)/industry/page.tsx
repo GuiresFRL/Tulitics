@@ -93,8 +93,8 @@ export default function IndustryPage() {
         }}
       >
         <div className="absolute inset-0" style={{ background: 'rgba(5,30,25,0.88)' }} />
-        <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
-          <p className="text-white text-4xl font-extrabold mb-3">Industries</p>
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+          <p className="text-white text-2xl sm:text-4xl font-extrabold mb-3">Industries</p>
           <p className="text-gray-200 text-sm max-w-2xl leading-relaxed">
             Scientific research solutions to help healthcare institutions make better decisions about clinical and administrative aspects.
           </p>
@@ -203,7 +203,7 @@ export default function IndustryPage() {
 
       {/* ── BOTTOM BANNER ───────────────────────────────── */}
       <section
-        className="relative text-white py-16 px-6"
+        className="relative text-white py-10 sm:py-16 px-4 sm:px-6"
         style={{
           backgroundImage: 'url(/images/ai-healthcare.jpg)',
           backgroundSize: 'cover',
@@ -212,13 +212,13 @@ export default function IndustryPage() {
       >
         <div className="absolute inset-0" style={{ background: 'rgba(5,20,15,0.78)' }} />
         <div className="relative z-10 max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Advancing Research in Healthcare &amp; AI</h2>
+          <h2 className="text-xl sm:text-3xl font-bold mb-4">Advancing Research in Healthcare &amp; AI</h2>
           <p className="text-gray-300 text-sm mb-8 max-w-2xl mx-auto leading-relaxed">
             Partner with us to publish your research and contribute to evidence-based innovations in healthcare and medicine.
           </p>
           <Link
             href="https://journal-management-system-omega.vercel.app/"
-            className="inline-flex items-center gap-2 px-8 py-3 border-2 border-white font-semibold text-sm hover:bg-white hover:text-gray-900 transition-colors"
+            className="inline-flex items-center gap-2 px-5 sm:px-8 py-3 border-2 border-white font-semibold text-sm hover:bg-white hover:text-gray-900 transition-colors"
           >
             Submit Your Research →
           </Link>
