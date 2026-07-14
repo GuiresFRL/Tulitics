@@ -9,6 +9,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'machine-learning-disease-prediction-prevention',
+    badge: 'Blog',
+    date: 'July 10, 2026',
+    readTime: '10 min read',
+    title: 'Machine Learning Applications in Disease Prediction and Prevention',
+    excerpt: 'Machine learning disease prediction is transforming healthcare through AI risk models, predictive analytics, and personalized diagnosis for early disease prevention.',
+    image: '/images/blog-ml-disease-feature.svg',
+    keywords: ['ML Disease Prediction', 'Predictive Analytics', 'AI Risk Models', 'Deep Learning'],
+  },
+  {
     slug: 'ai-precision-medicine-healthcare-delivery',
     badge: 'Blog',
     date: 'July 10, 2026',

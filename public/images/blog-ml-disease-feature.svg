@@ -1,0 +1,133 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020d1a"/>
+      <stop offset="55%" style="stop-color:#061628"/>
+      <stop offset="100%" style="stop-color:#052218"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="tealGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0fb68c;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#0fb68c;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.02"/>
+    </linearGradient>
+    <filter id="gblur"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+
+  <rect width="1200" height="480" fill="url(#bg)"/>
+  <circle cx="880" cy="210" r="260" fill="url(#blueGlow)" filter="url(#gblur)"/>
+  <circle cx="140" cy="380" r="200" fill="url(#tealGlow)" filter="url(#gblur)"/>
+
+  <!-- Grid -->
+  <g stroke="#2563eb" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="96" x2="1200" y2="96"/><line x1="0" y1="192" x2="1200" y2="192"/>
+    <line x1="0" y1="288" x2="1200" y2="288"/><line x1="0" y1="384" x2="1200" y2="384"/>
+    <line x1="240" y1="0" x2="240" y2="480"/><line x1="480" y1="0" x2="480" y2="480"/>
+    <line x1="720" y1="0" x2="720" y2="480"/><line x1="960" y1="0" x2="960" y2="480"/>
+  </g>
+
+  <!-- LEFT: Text -->
+  <text x="60" y="98" font-size="12" fill="#60a5fa" font-weight="700" letter-spacing="3">TULITICS INSIGHTS · BLOG</text>
+  <text x="60" y="155" font-size="36" fill="white" font-weight="800">Machine Learning</text>
+  <text x="60" y="200" font-size="36" fill="white" font-weight="800">Applications in Disease</text>
+  <text x="60" y="244" font-size="32" fill="#0fb68c" font-weight="800">Prediction &amp; Prevention</text>
+  <text x="60" y="286" font-size="13" fill="#93c5fd" font-weight="400">Predictive Analytics · AI Risk Models · Disease Susceptibility</text>
+
+  <!-- Tag pills -->
+  <rect x="60" y="310" width="130" height="26" rx="13" fill="#2563eb" opacity="0.25"/>
+  <text x="125" y="327" font-size="11" fill="#60a5fa" text-anchor="middle" font-weight="600">ML Disease Prediction</text>
+  <rect x="202" y="310" width="112" height="26" rx="13" fill="#0fb68c" opacity="0.2"/>
+  <text x="258" y="327" font-size="11" fill="#0fb68c" text-anchor="middle" font-weight="600">Predictive Analytics</text>
+  <rect x="326" y="310" width="90" height="26" rx="13" fill="#2563eb" opacity="0.15"/>
+  <text x="371" y="327" font-size="11" fill="#93c5fd" text-anchor="middle" font-weight="600">Deep Learning</text>
+
+  <text x="60" y="400" font-size="13" fill="#6b8fa8">July 10, 2026  ·  10 min read  ·  Tulitics Editorial Team</text>
+
+  <!-- Divider -->
+  <line x1="620" y1="60" x2="620" y2="420" stroke="#2563eb" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- RIGHT: Neural network illustration -->
+  <!-- Input layer -->
+  <circle cx="700" cy="130" r="14" fill="#061628" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="700" y="134" font-size="8" fill="#93c5fd" text-anchor="middle">EHR</text>
+  <circle cx="700" cy="190" r="14" fill="#061628" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="700" y="194" font-size="8" fill="#93c5fd" text-anchor="middle">Lab</text>
+  <circle cx="700" cy="250" r="14" fill="#061628" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="700" y="254" font-size="8" fill="#93c5fd" text-anchor="middle">Img</text>
+  <circle cx="700" cy="310" r="14" fill="#061628" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="700" y="314" font-size="8" fill="#93c5fd" text-anchor="middle">DNA</text>
+  <circle cx="700" cy="370" r="14" fill="#061628" stroke="#0fb68c" stroke-width="1.5"/>
+  <text x="700" y="374" font-size="8" fill="#0fb68c" text-anchor="middle">IoT</text>
+
+  <!-- Hidden layer 1 -->
+  <circle cx="820" cy="155" r="16" fill="#0d2240" stroke="#2563eb" stroke-width="1.5"/>
+  <circle cx="820" cy="220" r="16" fill="#0d2240" stroke="#2563eb" stroke-width="1.5"/>
+  <circle cx="820" cy="285" r="16" fill="#0d2240" stroke="#2563eb" stroke-width="1.5"/>
+  <circle cx="820" cy="350" r="16" fill="#0d2240" stroke="#0fb68c" stroke-width="1.5"/>
+
+  <!-- Hidden layer 2 -->
+  <circle cx="930" cy="175" r="16" fill="#0d2240" stroke="#2563eb" stroke-width="1.5"/>
+  <circle cx="930" cy="250" r="16" fill="#0d2240" stroke="#2563eb" stroke-width="1.5"/>
+  <circle cx="930" cy="325" r="16" fill="#0d2240" stroke="#0fb68c" stroke-width="1.5"/>
+
+  <!-- Output layer -->
+  <circle cx="1050" cy="185" r="18" fill="#1e3a5f" stroke="#2563eb" stroke-width="2"/>
+  <text x="1050" y="182" font-size="7" fill="#60a5fa" text-anchor="middle" font-weight="700">Risk</text>
+  <text x="1050" y="192" font-size="7" fill="#60a5fa" text-anchor="middle" font-weight="700">Score</text>
+  <circle cx="1050" cy="260" r="18" fill="#0a2e1e" stroke="#0fb68c" stroke-width="2"/>
+  <text x="1050" y="257" font-size="7" fill="#0fb68c" text-anchor="middle" font-weight="700">Early</text>
+  <text x="1050" y="267" font-size="7" fill="#0fb68c" text-anchor="middle" font-weight="700">Alert</text>
+  <circle cx="1050" cy="335" r="18" fill="#1e3a5f" stroke="#2563eb" stroke-width="2"/>
+  <text x="1050" y="332" font-size="7" fill="#60a5fa" text-anchor="middle" font-weight="700">Treat-</text>
+  <text x="1050" y="342" font-size="7" fill="#60a5fa" text-anchor="middle" font-weight="700">ment</text>
+
+  <!-- Connections input→hidden1 -->
+  <g stroke="#2563eb" stroke-width="0.7" opacity="0.3">
+    <line x1="714" y1="130" x2="804" y2="155"/>
+    <line x1="714" y1="130" x2="804" y2="220"/>
+    <line x1="714" y1="190" x2="804" y2="155"/>
+    <line x1="714" y1="190" x2="804" y2="220"/>
+    <line x1="714" y1="190" x2="804" y2="285"/>
+    <line x1="714" y1="250" x2="804" y2="220"/>
+    <line x1="714" y1="250" x2="804" y2="285"/>
+    <line x1="714" y1="250" x2="804" y2="350"/>
+    <line x1="714" y1="310" x2="804" y2="285"/>
+    <line x1="714" y1="310" x2="804" y2="350"/>
+    <line x1="714" y1="370" x2="804" y2="285"/>
+    <line x1="714" y1="370" x2="804" y2="350"/>
+  </g>
+  <!-- Connections hidden1→hidden2 -->
+  <g stroke="#2563eb" stroke-width="0.7" opacity="0.3">
+    <line x1="836" y1="155" x2="914" y2="175"/>
+    <line x1="836" y1="155" x2="914" y2="250"/>
+    <line x1="836" y1="220" x2="914" y2="175"/>
+    <line x1="836" y1="220" x2="914" y2="250"/>
+    <line x1="836" y1="285" x2="914" y2="250"/>
+    <line x1="836" y1="285" x2="914" y2="325"/>
+    <line x1="836" y1="350" x2="914" y2="250"/>
+    <line x1="836" y1="350" x2="914" y2="325"/>
+  </g>
+  <!-- Connections hidden2→output -->
+  <g stroke="#2563eb" stroke-width="1" opacity="0.5">
+    <line x1="946" y1="175" x2="1032" y2="185"/>
+    <line x1="946" y1="250" x2="1032" y2="260"/>
+    <line x1="946" y1="325" x2="1032" y2="335"/>
+    <line x1="946" y1="175" x2="1032" y2="260"/>
+    <line x1="946" y1="250" x2="1032" y2="185"/>
+  </g>
+
+  <!-- Layer labels -->
+  <text x="700" y="408" font-size="9" fill="#4b6280" text-anchor="middle">Input</text>
+  <text x="820" y="388" font-size="9" fill="#4b6280" text-anchor="middle">Hidden</text>
+  <text x="930" y="360" font-size="9" fill="#4b6280" text-anchor="middle">Hidden</text>
+  <text x="1050" y="370" font-size="9" fill="#4b6280" text-anchor="middle">Output</text>
+
+  <!-- Pulse line at bottom -->
+  <path d="M640 430 L680 430 L695 405 L710 455 L725 415 L740 430 L780 430 L795 418 L810 442 L825 422 L840 430 L1155 430" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/>
+</svg>
