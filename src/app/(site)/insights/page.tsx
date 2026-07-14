@@ -45,7 +45,7 @@ const posts = [
     readTime: '11 min read',
     title: 'Artificial Intelligence in Clinical Decision-Making and Patient Care',
     excerpt: 'Discover how AI transforms clinical decision-making with CDSS, predictive analytics, and personalized care to improve diagnosis and patient outcomes in modern healthcare.',
-    image: '/images/blog-ai-clinical-feature.svg',
+    image: '/images/blog-ai-clinical-feature.jpg',
     keywords: ['CDSS', 'AI Healthcare', 'Clinical Decisions', 'Patient Care'],
   },
   {
@@ -55,7 +55,7 @@ const posts = [
     readTime: '12 min read',
     title: 'AI-Powered Early Detection Strategies for Chronic Diseases',
     excerpt: 'AI for early disease detection is transforming chronic disease management by analyzing medical records, imaging, wearable data, and lab results to identify health risks before symptoms appear.',
-    image: '/images/blog-ai-detection-feature.svg',
+    image: '/images/blog-ai-detection-feature.jpg',
     keywords: ['AI', 'Chronic Disease', 'Predictive Analytics', 'Healthcare'],
   },
 ]

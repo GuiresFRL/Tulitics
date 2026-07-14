@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'AI for early disease detection improves chronic disease management using predictive analytics, enabling timely diagnosis, personalised care, and better outcomes.',
     url: 'https://guires.info/insights/ai-powered-early-detection-strategies-chronic-diseases',
     type: 'article',
-    images: [{ url: '/images/blog-ai-detection-feature.svg', width: 1200, height: 630, alt: 'AI-Powered Early Detection for Chronic Diseases' }],
+    images: [{ url: '/images/blog-ai-detection-feature.jpg', width: 1200, height: 630, alt: 'AI-Powered Early Detection for Chronic Diseases' }],
   },
 }
 
@@ -39,7 +39,7 @@ export default function BlogPostPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="rounded-t-2xl overflow-hidden">
             <img
-              src="/images/blog-ai-detection-feature.svg"
+              src="/images/blog-ai-detection-feature.jpg"
               alt="AI-Powered Early Detection for Chronic Diseases"
               className="w-full h-auto object-cover"
               style={{ maxHeight: '420px', objectFit: 'cover' }}

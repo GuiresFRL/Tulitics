@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: 'How AI transforms clinical decision-making with CDSS, predictive analytics, and personalized care to improve diagnosis and patient outcomes.',
     url: 'https://guires.info/insights/ai-clinical-decision-making-patient-care',
     type: 'article',
-    images: [{ url: '/images/blog-ai-clinical-feature.svg', width: 1200, height: 480, alt: 'AI in Clinical Decision-Making' }],
+    images: [{ url: '/images/blog-ai-clinical-feature.jpg', width: 1200, height: 480, alt: 'AI in Clinical Decision-Making' }],
   },
 }
 
@@ -39,7 +39,7 @@ export default function BlogPostPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="rounded-t-2xl overflow-hidden">
             <img
-              src="/images/blog-ai-clinical-feature.svg"
+              src="/images/blog-ai-clinical-feature.jpg"
               alt="AI in Clinical Decision-Making and Patient Care"
               className="w-full h-auto"
               style={{ maxHeight: '400px', objectFit: 'cover' }}
