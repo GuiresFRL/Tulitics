@@ -175,7 +175,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-2/5 overflow-hidden bg-gray-100 flex-shrink-0" style={{ minHeight: '200px' }}>
                 <img
-                  src="/images/blog-ai-public-health-feature.svg"
+                  src="/images/blog-ai-public-health-feature.jpg"
                   alt="The Role of Artificial Intelligence in Modern Public Health Systems"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ minHeight: '200px' }}

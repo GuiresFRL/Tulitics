@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Role of Artificial Intelligence in Modern Public Health Systems',
     description: 'Artificial Intelligence in public health improves disease detection, healthcare planning, surveillance, and decision-making through machine learning and predictive analytics.',
-    images: [{ url: '/images/blog-ai-public-health-feature.svg' }],
+    images: [{ url: '/images/blog-ai-public-health-feature.jpg' }],
   },
 }
 
@@ -45,7 +45,7 @@ export default function BlogAIPublicHealth() {
       <div className="w-full" style={{ background: '#021a0e' }}>
         <div className="max-w-6xl mx-auto">
           <img
-            src="/images/blog-ai-public-health-feature.svg"
+            src="/images/blog-ai-public-health-feature.jpg"
             alt="The Role of Artificial Intelligence in Modern Public Health Systems"
             className="w-full"
             style={{ maxHeight: '400px', objectFit: 'cover' }}

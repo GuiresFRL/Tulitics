@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Machine Learning Applications in Disease Prediction and Prevention',
     description: 'Machine learning disease prediction is transforming healthcare through AI risk models, predictive analytics, and personalized diagnosis for early disease prevention.',
-    images: [{ url: '/images/blog-ml-disease-feature.svg' }],
+    images: [{ url: '/images/blog-ml-disease-feature.jpg' }],
   },
 }
 
@@ -45,7 +45,7 @@ export default function BlogMLDiseasePrediction() {
       <div className="w-full" style={{ background: '#020d1a' }}>
         <div className="max-w-6xl mx-auto">
           <img
-            src="/images/blog-ml-disease-feature.svg"
+            src="/images/blog-ml-disease-feature.jpg"
             alt="Machine Learning Applications in Disease Prediction and Prevention"
             className="w-full"
             style={{ maxHeight: '400px', objectFit: 'cover' }}

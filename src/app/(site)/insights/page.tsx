@@ -15,7 +15,7 @@ const posts = [
     readTime: '10 min read',
     title: 'The Role of Artificial Intelligence in Modern Public Health Systems',
     excerpt: 'Artificial Intelligence in public health improves disease detection, healthcare planning, surveillance, and decision-making through machine learning and predictive analytics.',
-    image: '/images/blog-ai-public-health-feature.svg',
+    image: '/images/blog-ai-public-health-feature.jpg',
     keywords: ['AI Public Health', 'Epidemiology AI', 'Disease Surveillance', 'Predictive Analytics'],
   },
   {
@@ -25,7 +25,7 @@ const posts = [
     readTime: '10 min read',
     title: 'Machine Learning Applications in Disease Prediction and Prevention',
     excerpt: 'Machine learning disease prediction is transforming healthcare through AI risk models, predictive analytics, and personalized diagnosis for early disease prevention.',
-    image: '/images/blog-ml-disease-feature.svg',
+    image: '/images/blog-ml-disease-feature.jpg',
     keywords: ['ML Disease Prediction', 'Predictive Analytics', 'AI Risk Models', 'Deep Learning'],
   },
   {
