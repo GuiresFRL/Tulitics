@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'The Role of Artificial Intelligence in Modern Public Health Systems | Tulitics',
   description: 'Artificial Intelligence in public health improves disease detection, healthcare planning, surveillance, and decision-making through machine learning and predictive analytics.',
   keywords: ['Artificial Intelligence in Public Health Systems', 'AI in healthcare systems', 'Machine learning public health', 'AI disease diagnosis', 'AI epidemiology surveillance'],
-  alternates: { canonical: 'https://guires.info/insights/artificial-intelligence-public-health-systems' },
+  alternates: { canonical: 'https://guires.info/insights/blog/artificial-intelligence-public-health-systems' },
   openGraph: {
     title: 'The Role of Artificial Intelligence in Modern Public Health Systems',
     description: 'Artificial Intelligence in public health improves disease detection, healthcare planning, surveillance, and decision-making through machine learning and predictive analytics.',

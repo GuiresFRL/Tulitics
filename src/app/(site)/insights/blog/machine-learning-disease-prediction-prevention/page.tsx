@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Machine Learning Applications in Disease Prediction and Prevention | Tulitics',
   description: 'Machine learning disease prediction is transforming healthcare through AI risk models, predictive analytics, and personalized diagnosis for early disease prevention.',
   keywords: ['Machine learning disease prediction', 'Disease prediction algorithms', 'Predictive analytics disease diagnosis', 'AI disease risk prediction models', 'Deep learning cardiovascular disease prediction'],
-  alternates: { canonical: 'https://guires.info/insights/machine-learning-disease-prediction-prevention' },
+  alternates: { canonical: 'https://guires.info/insights/blog/machine-learning-disease-prediction-prevention' },
   openGraph: {
     title: 'Machine Learning Applications in Disease Prediction and Prevention',
     description: 'Machine learning disease prediction is transforming healthcare through AI risk models, predictive analytics, and personalized diagnosis for early disease prevention.',

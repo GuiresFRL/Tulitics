@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'AI-Powered Strategies for Chronic Disease Detection | Tulitics Insights',
   description: 'AI for early disease detection improves chronic disease management using predictive analytics, enabling timely diagnosis, personalised care, and better outcomes.',
   keywords: ['AI for Early Disease Detection', 'AI in Chronic Disease Management', 'Predictive analytics for chronic diseases', 'AI algorithms for disease prediction', 'AI-assisted early detection systems'],
-  alternates: { canonical: 'https://guires.info/insights/ai-powered-early-detection-strategies-chronic-diseases' },
+  alternates: { canonical: 'https://guires.info/insights/blog/ai-powered-early-detection-strategies-chronic-diseases' },
   openGraph: {
     title: 'AI-Powered Early Detection Strategies for Chronic Diseases',
     description: 'AI for early disease detection improves chronic disease management using predictive analytics, enabling timely diagnosis, personalised care, and better outcomes.',

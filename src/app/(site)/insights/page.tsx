@@ -79,7 +79,7 @@ export default function InsightsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((post) => (
-              <Link key={post.slug} href={`/insights/${post.slug}`} className="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <Link key={post.slug} href={`/insights/blog/${post.slug}`} className="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                 <div className="aspect-video overflow-hidden bg-gray-100">
                   <img
                     src={post.image}

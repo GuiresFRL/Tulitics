@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'AI in Clinical Decision-Making and Patient Care | Tulitics Insights',
   description: 'Discover how AI transforms clinical decision-making with predictive analytics, CDSS, and personalized care to improve diagnosis and patient outcomes.',
   keywords: ['Artificial Intelligence in Clinical Decision-Making', 'Clinical decision support systems', 'Predictive analytics in healthcare', 'AI for chronic disease management', 'AI for Medical Decision Making'],
-  alternates: { canonical: 'https://guires.info/insights/ai-clinical-decision-making-patient-care' },
+  alternates: { canonical: 'https://guires.info/insights/blog/ai-clinical-decision-making-patient-care' },
   openGraph: {
     title: 'Artificial Intelligence in Clinical Decision-Making and Patient Care',
     description: 'How AI transforms clinical decision-making with CDSS, predictive analytics, and personalized care to improve diagnosis and patient outcomes.',

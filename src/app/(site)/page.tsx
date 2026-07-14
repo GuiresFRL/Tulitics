@@ -171,7 +171,7 @@ export default function Home() {
           <p className="text-gray-500 text-sm mb-6">Latest breakthroughs in AI-powered healthcare and medicine</p>
 
           {/* Latest featured blog card */}
-          <Link href="/insights/artificial-intelligence-public-health-systems" className="group block rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden mb-5">
+          <Link href="/insights/blog/artificial-intelligence-public-health-systems" className="group block rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden mb-5">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-2/5 overflow-hidden bg-gray-100 flex-shrink-0" style={{ minHeight: '200px' }}>
                 <img

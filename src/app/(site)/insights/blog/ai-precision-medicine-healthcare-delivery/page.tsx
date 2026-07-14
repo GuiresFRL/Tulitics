@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'AI-Driven Innovations in Precision Medicine and Healthcare Delivery | Tulitics',
   description: 'Discover how AI-driven precision medicine improves diagnostics, treatment decisions, and healthcare delivery systems. Explore real-world applications, implementation strategies, challenges, and future trends.',
   keywords: ['AI-driven precision medicine', 'Precision medicine AI applications', 'AI healthcare delivery systems', 'Healthcare delivery optimization AI', 'Precision diagnostics AI'],
-  alternates: { canonical: 'https://guires.info/insights/ai-precision-medicine-healthcare-delivery' },
+  alternates: { canonical: 'https://guires.info/insights/blog/ai-precision-medicine-healthcare-delivery' },
   openGraph: {
     title: 'AI-Driven Innovations in Precision Medicine and Healthcare Delivery',
     description: 'Discover how AI-driven precision medicine improves diagnostics, treatment decisions, and healthcare delivery systems.',
