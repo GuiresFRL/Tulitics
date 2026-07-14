@@ -102,11 +102,11 @@ export default function IndustryPage() {
       </section>
 
       {/* ── MAIN SELECT YOUR NEED SECTION ───────────────── */}
-      <section className="py-12 px-6 bg-white">
+      <section className="py-8 sm:py-12 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto border border-gray-200 rounded-lg overflow-hidden">
 
           {/* Header row */}
-          <div className="flex">
+          <div className="hidden sm:flex">
             <div
               className="w-56 flex-shrink-0 px-5 py-4 font-bold text-white text-base border-b border-white/20"
               style={{ background: '#0a5c3c' }}
@@ -117,9 +117,43 @@ export default function IndustryPage() {
               Choose Our Services to meet your Publication Goals
             </div>
           </div>
+          <div className="sm:hidden px-4 py-3 font-bold text-white text-sm" style={{ background: '#0a5c3c' }}>
+            Select Your Need
+          </div>
 
-          {/* Body row */}
-          <div className="flex min-h-96">
+          {/* Mobile: accordion tabs */}
+          <div className="sm:hidden">
+            {sections.map((s, i) => (
+              <div key={s.label} className="border-b border-gray-200 last:border-b-0">
+                <button
+                  onClick={() => setActive(i === active ? -1 : i)}
+                  className="w-full text-left px-4 py-3 text-sm font-medium flex justify-between items-center"
+                  style={{ background: i === active ? '#0a5c3c' : '#fff', color: i === active ? '#fff' : '#374151' }}
+                >
+                  {s.label}
+                  <svg className="w-4 h-4 flex-shrink-0 transition-transform" style={{ transform: i === active ? 'rotate(180deg)' : 'rotate(0)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {i === active && (
+                  <div className="p-4 bg-white">
+                    <h2 className="text-base font-bold text-gray-900 mb-3">{s.label}</h2>
+                    <div className="space-y-3">
+                      {s.body.map((para, j) => (
+                        <div key={j} className="border border-gray-200 rounded-lg p-4">
+                          <p className="text-xs text-gray-400 mb-1">Healthcare service</p>
+                          <p className="text-gray-700 text-sm leading-relaxed">{para}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop: sidebar + content */}
+          <div className="hidden sm:flex min-h-96">
 
             {/* Left sidebar tabs */}
             <div className="w-56 flex-shrink-0 border-r border-gray-200" style={{ background: '#0a5c3c' }}>
@@ -163,7 +197,7 @@ export default function IndustryPage() {
               )}
 
             </div>
-          </div>
+          </div>{/* end desktop flex */}
         </div>
       </section>
 

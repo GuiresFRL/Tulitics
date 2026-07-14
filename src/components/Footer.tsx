@@ -102,9 +102,9 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-green-300">
           <p>© {new Date().getFullYear()} – Tulitics is a trading name of Guires, a company registered.</p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-x-4 gap-y-1 justify-center sm:justify-end">
             {[['Privacy Policy', '/privacy'], ['Terms of Use', '/terms'], ['Cookie Policy', '/cookies'], ['Accessibility', '/accessibility']].map(([label, href]) => (
-              <Link key={label} href={href} className="hover:text-white transition-colors">{label}</Link>
+              <Link key={label} href={href} className="hover:text-white transition-colors whitespace-nowrap">{label}</Link>
             ))}
           </div>
         </div>

@@ -52,20 +52,20 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
     <>
       {/* Journal Hero Banner */}
       <div style={{ background: 'linear-gradient(135deg, #0a2e2e 0%, #0d4a3a 50%, #0a3d2e 100%)' }} className="w-full">
-        <div className="max-w-7xl mx-auto px-6 py-8 flex items-center gap-8">
-          <div className="flex-shrink-0 bg-white rounded-lg p-2 shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
+          <div className="flex-shrink-0 bg-white rounded-lg p-2 shadow-lg self-center sm:self-auto">
             <img
               src="/images/journal-cover.jpg"
               alt="Journal of Artificial Intelligence in Medicine & Public Health"
-              className="w-44 h-auto rounded"
+              className="w-28 sm:w-44 h-auto rounded"
             />
           </div>
-          <div>
-            <h1 className="text-2xl md:text-3xl font-bold text-white leading-tight mb-3">
+          <div className="min-w-0">
+            <h1 className="text-lg sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-2 sm:mb-3">
               {subtitle || 'Journal of Artificial Intelligence in Medicine & Public Health'}
             </h1>
             {!subtitle && (
-              <div className="space-y-1 text-sm text-white">
+              <div className="space-y-0.5 text-xs sm:text-sm text-white">
                 <p><span className="font-semibold">Frequency</span>: Quarterly</p>
                 <p><span className="font-semibold">Access</span>: Subscription / Fully Open Access</p>
                 <p><span className="font-semibold">APC</span>: No Fees</p>
@@ -77,22 +77,23 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
 
       {/* Journal Sub-Nav */}
       <nav className="w-full bg-white border-b border-gray-200 shadow-sm sticky z-40" style={{ top: '95px' }}>
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <div className="flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+          {/* Scrollable tabs on mobile */}
+          <div className="flex items-center overflow-x-auto scrollbar-hide flex-1 min-w-0">
             {navItems.map((item) => (
-              <div key={item.label} className="relative">
+              <div key={item.label} className="relative flex-shrink-0">
                 {item.href ? (
-                  <Link href={item.href} className="inline-block px-4 py-4 text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap">
+                  <Link href={item.href} className="inline-block px-3 sm:px-4 py-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap">
                     {item.label}
                   </Link>
                 ) : (
                   <button
-                    className="inline-flex items-center gap-1 px-4 py-4 text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap"
+                    className="inline-flex items-center gap-1 px-3 sm:px-4 py-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap"
                     onMouseEnter={() => setOpen(item.label)}
                     onMouseLeave={() => setOpen(null)}
                   >
                     {item.label}
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                     {open === item.label && item.children && (
@@ -109,12 +110,15 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
               </div>
             ))}
           </div>
-          <div className="flex items-center gap-3 ml-4">
-            <Link href="https://journal-management-system-omega.vercel.app/" className="px-5 py-2 text-sm font-semibold text-white rounded whitespace-nowrap" style={{ background: '#0a2e2e' }}>
+          <div className="flex items-center gap-2 ml-2 flex-shrink-0">
+            <Link href="https://journal-management-system-omega.vercel.app/" className="hidden sm:inline-flex px-4 py-2 text-xs sm:text-sm font-semibold text-white rounded whitespace-nowrap" style={{ background: '#0a2e2e' }}>
               Submit a Manuscript
             </Link>
-            <button aria-label="Search" className="p-2 text-gray-500 hover:text-gray-900 transition-colors">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+            <Link href="https://journal-management-system-omega.vercel.app/" className="sm:hidden px-3 py-1.5 text-xs font-semibold text-white rounded whitespace-nowrap" style={{ background: '#0a2e2e' }}>
+              Submit
+            </Link>
+            <button aria-label="Search" className="p-2 text-gray-500 hover:text-gray-900 transition-colors flex-shrink-0">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 111 11a6 6 0 0116 0z" />
               </svg>
             </button>

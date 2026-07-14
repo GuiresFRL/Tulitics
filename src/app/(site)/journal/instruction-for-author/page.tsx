@@ -83,6 +83,26 @@ export default function InstructionForAuthorPage() {
   return (
     <>
       <JournalHeader subtitle="Instruction for Authors" />
+
+      {/* Mobile TOC dropdown */}
+      <div className="lg:hidden bg-white border-b border-gray-200 px-4 py-3">
+        <select
+          className="w-full text-sm border border-gray-300 rounded px-3 py-2 text-gray-700"
+          onChange={(e) => scrollTo(e.target.value)}
+          defaultValue=""
+        >
+          <option value="" disabled>Jump to section…</option>
+          {nav.map((item) => (
+            <>
+              <option key={item.id} value={item.id}>{item.label}</option>
+              {item.children?.map((child) => (
+                <option key={child.id} value={child.id}>{'  ↳ ' + child.label}</option>
+              ))}
+            </>
+          ))}
+        </select>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 py-8 flex gap-0">
 
         {/* ── LEFT SIDEBAR ─────────────────────────────── */}
