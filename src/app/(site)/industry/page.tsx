@@ -78,7 +78,7 @@ const sections = [
 
 export default function IndustryPage() {
   const [active, setActive] = useState(0)
-  const section = sections[active]
+  const section = sections[active] ?? sections[0]
 
   return (
     <>
