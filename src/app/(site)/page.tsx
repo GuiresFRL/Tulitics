@@ -171,12 +171,12 @@ export default function Home() {
           <p className="text-gray-500 text-sm mb-6">Latest breakthroughs in AI-powered healthcare and medicine</p>
 
           {/* Latest featured blog card */}
-          <Link href="/insights/machine-learning-disease-prediction-prevention" className="group block rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden mb-5">
+          <Link href="/insights/artificial-intelligence-public-health-systems" className="group block rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden mb-5">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-2/5 overflow-hidden bg-gray-100 flex-shrink-0" style={{ minHeight: '200px' }}>
                 <img
-                  src="/images/blog-ml-disease-feature.svg"
-                  alt="Machine Learning Applications in Disease Prediction and Prevention"
+                  src="/images/blog-ai-public-health-feature.svg"
+                  alt="The Role of Artificial Intelligence in Modern Public Health Systems"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ minHeight: '200px' }}
                 />
@@ -184,24 +184,24 @@ export default function Home() {
               <div className="flex-1 p-6 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: 'rgba(37,99,235,0.12)', color: '#2563eb' }}>Blog</span>
+                    <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: 'rgba(22,163,74,0.12)', color: '#16a34a' }}>Blog</span>
                     <span className="text-xs text-gray-400">📅 July 10, 2026</span>
                     <span className="text-xs text-gray-400">· 10 min read</span>
                   </div>
-                  <h3 className="font-bold text-gray-900 text-lg leading-snug mb-3 group-hover:text-blue-800 transition-colors">
-                    Machine Learning Applications in Disease Prediction and Prevention
+                  <h3 className="font-bold text-gray-900 text-lg leading-snug mb-3 group-hover:text-green-800 transition-colors">
+                    The Role of Artificial Intelligence in Modern Public Health Systems
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                    Machine learning disease prediction is transforming healthcare through AI risk models, predictive analytics, and personalized diagnosis for early disease prevention.
+                    Artificial Intelligence in public health improves disease detection, healthcare planning, surveillance, and decision-making through machine learning and predictive analytics.
                   </p>
                   <div className="flex flex-wrap gap-1.5">
-                    {['ML Disease Prediction', 'Predictive Analytics', 'AI Risk Models', 'Deep Learning'].map((kw) => (
+                    {['AI Public Health', 'Epidemiology AI', 'Disease Surveillance', 'Predictive Analytics'].map((kw) => (
                       <span key={kw} className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">{kw}</span>
                     ))}
                   </div>
                 </div>
                 <div className="mt-4">
-                  <span className="text-sm font-semibold" style={{ color: '#2563eb' }}>Read article →</span>
+                  <span className="text-sm font-semibold" style={{ color: '#16a34a' }}>Read article →</span>
                 </div>
               </div>
             </div>

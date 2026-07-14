@@ -1,0 +1,118 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#021a0e"/>
+      <stop offset="50%" style="stop-color:#042a18"/>
+      <stop offset="100%" style="stop-color:#0a1f3a"/>
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:0.28"/>
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.02"/>
+    </linearGradient>
+    <filter id="gblur"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+
+  <rect width="1200" height="480" fill="url(#bg)"/>
+  <circle cx="900" cy="200" r="270" fill="url(#greenGlow)" filter="url(#gblur)"/>
+  <circle cx="130" cy="380" r="200" fill="url(#blueGlow)" filter="url(#gblur)"/>
+
+  <!-- Grid -->
+  <g stroke="#16a34a" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="96" x2="1200" y2="96"/><line x1="0" y1="192" x2="1200" y2="192"/>
+    <line x1="0" y1="288" x2="1200" y2="288"/><line x1="0" y1="384" x2="1200" y2="384"/>
+    <line x1="240" y1="0" x2="240" y2="480"/><line x1="480" y1="0" x2="480" y2="480"/>
+    <line x1="720" y1="0" x2="720" y2="480"/><line x1="960" y1="0" x2="960" y2="480"/>
+  </g>
+
+  <!-- LEFT: Text -->
+  <text x="60" y="98" font-size="12" fill="#4ade80" font-weight="700" letter-spacing="3">TULITICS INSIGHTS · BLOG</text>
+  <text x="60" y="155" font-size="36" fill="white" font-weight="800">The Role of Artificial</text>
+  <text x="60" y="200" font-size="36" fill="white" font-weight="800">Intelligence in Modern</text>
+  <text x="60" y="244" font-size="32" fill="#4ade80" font-weight="800">Public Health Systems</text>
+  <text x="60" y="286" font-size="13" fill="#86efac" font-weight="400">Disease Surveillance · Epidemiology AI · Population Health</text>
+
+  <!-- Tag pills -->
+  <rect x="60" y="310" width="110" height="26" rx="13" fill="#16a34a" opacity="0.25"/>
+  <text x="115" y="327" font-size="11" fill="#4ade80" text-anchor="middle" font-weight="600">AI Public Health</text>
+  <rect x="182" y="310" width="130" height="26" rx="13" fill="#0ea5e9" opacity="0.2"/>
+  <text x="247" y="327" font-size="11" fill="#7dd3fc" text-anchor="middle" font-weight="600">Epidemiology AI</text>
+  <rect x="324" y="310" width="116" height="26" rx="13" fill="#16a34a" opacity="0.15"/>
+  <text x="382" y="327" font-size="11" fill="#4ade80" text-anchor="middle" font-weight="600">Disease Surveillance</text>
+
+  <text x="60" y="400" font-size="13" fill="#6b8fa8">July 10, 2026  ·  10 min read  ·  Tulitics Editorial Team</text>
+
+  <!-- Divider -->
+  <line x1="620" y1="60" x2="620" y2="420" stroke="#16a34a" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- RIGHT: Public health globe + nodes illustration -->
+  <!-- Globe base circle -->
+  <circle cx="900" cy="220" r="110" fill="#042a18" stroke="#16a34a" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="900" cy="220" r="110" fill="none" stroke="#16a34a" stroke-width="0.6" opacity="0.4" stroke-dasharray="4 6"/>
+  <!-- Globe meridians -->
+  <ellipse cx="900" cy="220" rx="55" ry="110" fill="none" stroke="#16a34a" stroke-width="0.8" opacity="0.3"/>
+  <ellipse cx="900" cy="220" rx="95" ry="38" fill="none" stroke="#16a34a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="790" y1="220" x2="1010" y2="220" stroke="#16a34a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="900" y1="110" x2="900" y2="330" stroke="#16a34a" stroke-width="0.8" opacity="0.3"/>
+  <!-- Globe highlight -->
+  <circle cx="900" cy="220" r="110" fill="none" stroke="#4ade80" stroke-width="1" opacity="0.15"/>
+  <!-- Centre icon -->
+  <text x="900" y="210" font-size="30" text-anchor="middle">🌍</text>
+  <text x="900" y="240" font-size="10" fill="#4ade80" text-anchor="middle" font-weight="700">Population Health AI</text>
+
+  <!-- Orbiting node cards -->
+  <!-- Top: Disease Surveillance -->
+  <circle cx="900" cy="82" r="28" fill="#042a18" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="900" y="78" font-size="14" text-anchor="middle">🦠</text>
+  <text x="900" y="92" font-size="7.5" fill="#4ade80" text-anchor="middle" font-weight="700">Surveillance</text>
+  <line x1="900" y1="110" x2="900" y2="130" stroke="#16a34a" stroke-width="1" opacity="0.5" stroke-dasharray="3 3"/>
+
+  <!-- Right: Predictive Analytics -->
+  <circle cx="1038" cy="220" r="28" fill="#042a18" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="1038" y="216" font-size="14" text-anchor="middle">📊</text>
+  <text x="1038" y="230" font-size="7.5" fill="#7dd3fc" text-anchor="middle" font-weight="700">Predictive</text>
+  <line x1="1010" y1="220" x2="1030" y2="220" stroke="#0ea5e9" stroke-width="1" opacity="0.5" stroke-dasharray="3 3"/>
+
+  <!-- Bottom: Early Detection -->
+  <circle cx="900" cy="358" r="28" fill="#042a18" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="900" y="354" font-size="14" text-anchor="middle">🎯</text>
+  <text x="900" y="368" font-size="7.5" fill="#4ade80" text-anchor="middle" font-weight="700">Early Detection</text>
+  <line x1="900" y1="330" x2="900" y2="348" stroke="#16a34a" stroke-width="1" opacity="0.5" stroke-dasharray="3 3"/>
+
+  <!-- Left: Clinical Decisions -->
+  <circle cx="762" cy="220" r="28" fill="#042a18" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="762" y="216" font-size="14" text-anchor="middle">🏥</text>
+  <text x="762" y="230" font-size="7.5" fill="#4ade80" text-anchor="middle" font-weight="700">Clinical AI</text>
+  <line x1="790" y1="220" x2="772" y2="220" stroke="#16a34a" stroke-width="1" opacity="0.5" stroke-dasharray="3 3"/>
+
+  <!-- Top-right: Resource Mgmt -->
+  <circle cx="988" cy="128" r="24" fill="#042a18" stroke="#0ea5e9" stroke-width="1.2"/>
+  <text x="988" y="124" font-size="12" text-anchor="middle">💡</text>
+  <text x="988" y="137" font-size="7" fill="#7dd3fc" text-anchor="middle" font-weight="700">Resources</text>
+  <line x1="978" y1="152" x2="970" y2="160" stroke="#0ea5e9" stroke-width="0.8" opacity="0.4" stroke-dasharray="3 3"/>
+
+  <!-- Top-left: ML Models -->
+  <circle cx="812" cy="128" r="24" fill="#042a18" stroke="#16a34a" stroke-width="1.2"/>
+  <text x="812" y="124" font-size="12" text-anchor="middle">🤖</text>
+  <text x="812" y="137" font-size="7" fill="#4ade80" text-anchor="middle" font-weight="700">ML Models</text>
+  <line x1="822" y1="152" x2="830" y2="160" stroke="#16a34a" stroke-width="0.8" opacity="0.4" stroke-dasharray="3 3"/>
+
+  <!-- Bottom-right: Outbreak -->
+  <circle cx="988" cy="312" r="24" fill="#042a18" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="988" y="308" font-size="12" text-anchor="middle">🚨</text>
+  <text x="988" y="321" font-size="7" fill="#fcd34d" text-anchor="middle" font-weight="700">Outbreak Alert</text>
+  <line x1="978" y1="288" x2="970" y2="280" stroke="#f59e0b" stroke-width="0.8" opacity="0.4" stroke-dasharray="3 3"/>
+
+  <!-- Outer ring -->
+  <circle cx="900" cy="220" r="148" fill="none" stroke="#16a34a" stroke-width="0.5" opacity="0.15" stroke-dasharray="2 8"/>
+
+  <!-- ECG pulse line bottom -->
+  <path d="M640 430 L678 430 L692 405 L707 455 L721 415 L736 430 L774 430 L788 418 L803 442 L818 422 L832 430 L1155 430" fill="none" stroke="#16a34a" stroke-width="1.5" opacity="0.3"/>
+</svg>

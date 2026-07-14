@@ -9,6 +9,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'artificial-intelligence-public-health-systems',
+    badge: 'Blog',
+    date: 'July 10, 2026',
+    readTime: '10 min read',
+    title: 'The Role of Artificial Intelligence in Modern Public Health Systems',
+    excerpt: 'Artificial Intelligence in public health improves disease detection, healthcare planning, surveillance, and decision-making through machine learning and predictive analytics.',
+    image: '/images/blog-ai-public-health-feature.svg',
+    keywords: ['AI Public Health', 'Epidemiology AI', 'Disease Surveillance', 'Predictive Analytics'],
+  },
+  {
     slug: 'machine-learning-disease-prediction-prevention',
     badge: 'Blog',
     date: 'July 10, 2026',
