@@ -1,0 +1,123 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#051a2e"/>
+      <stop offset="55%" style="stop-color:#0a2040"/>
+      <stop offset="100%" style="stop-color:#0d3a5c"/>
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.02"/>
+    </linearGradient>
+    <filter id="gblur"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="480" fill="url(#bg)"/>
+
+  <!-- Glow orbs -->
+  <circle cx="900" cy="200" r="260" fill="url(#accentGlow)" filter="url(#gblur)"/>
+  <circle cx="150" cy="400" r="180" fill="#3b82f6" opacity="0.05" filter="url(#gblur)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#3b82f6" stroke-width="0.3" opacity="0.1">
+    <line x1="0" y1="96" x2="1200" y2="96"/>
+    <line x1="0" y1="192" x2="1200" y2="192"/>
+    <line x1="0" y1="288" x2="1200" y2="288"/>
+    <line x1="0" y1="384" x2="1200" y2="384"/>
+    <line x1="240" y1="0" x2="240" y2="480"/>
+    <line x1="480" y1="0" x2="480" y2="480"/>
+    <line x1="720" y1="0" x2="720" y2="480"/>
+    <line x1="960" y1="0" x2="960" y2="480"/>
+  </g>
+
+  <!-- LEFT: Text -->
+  <text x="60" y="98" font-size="12" fill="#60a5fa" font-weight="700" letter-spacing="3">TULITICS INSIGHTS · BLOG</text>
+  <text x="60" y="158" font-size="38" fill="white" font-weight="800">Artificial Intelligence in</text>
+  <text x="60" y="206" font-size="38" fill="white" font-weight="800">Clinical Decision-Making</text>
+  <text x="60" y="252" font-size="34" fill="#60a5fa" font-weight="800">&amp; Patient Care</text>
+  <text x="60" y="295" font-size="14" fill="#93c5fd" font-weight="400">CDSS · Predictive Analytics · AI-Powered Healthcare</text>
+
+  <!-- Tag pills -->
+  <rect x="60" y="320" width="88" height="26" rx="13" fill="#3b82f6" opacity="0.25"/>
+  <text x="104" y="337" font-size="11" fill="#60a5fa" text-anchor="middle" font-weight="600">CDSS</text>
+  <rect x="160" y="320" width="130" height="26" rx="13" fill="#3b82f6" opacity="0.15"/>
+  <text x="225" y="337" font-size="11" fill="#60a5fa" text-anchor="middle" font-weight="600">AI Healthcare</text>
+  <rect x="302" y="320" width="134" height="26" rx="13" fill="#3b82f6" opacity="0.15"/>
+  <text x="369" y="337" font-size="11" fill="#60a5fa" text-anchor="middle" font-weight="600">Patient Outcomes</text>
+
+  <text x="60" y="400" font-size="13" fill="#6b8fa8">July 13, 2026  ·  11 min read  ·  Tulitics Editorial Team</text>
+
+  <!-- Divider -->
+  <line x1="620" y1="60" x2="620" y2="420" stroke="#3b82f6" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- RIGHT: Clinical decision flow illustration -->
+  <!-- Doctor / Clinician icon (simplified) -->
+  <circle cx="820" cy="148" r="22" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="820" cy="140" r="10" fill="#60a5fa" opacity="0.7"/>
+  <path d="M800 168 Q820 180 840 168" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.7"/>
+
+  <!-- Data sources -->
+  <!-- EHR card -->
+  <rect x="660" y="90" width="90" height="52" rx="8" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="705" y="112" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="700">EHR</text>
+  <text x="705" y="126" font-size="8" fill="#93c5fd" text-anchor="middle">Records</text>
+  <text x="705" y="137" font-size="14" text-anchor="middle">📋</text>
+
+  <!-- Lab card -->
+  <rect x="660" y="158" width="90" height="52" rx="8" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="705" y="180" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="700">Lab Results</text>
+  <text x="705" y="194" font-size="8" fill="#93c5fd" text-anchor="middle">Diagnostics</text>
+  <text x="705" y="205" font-size="14" text-anchor="middle">🔬</text>
+
+  <!-- Imaging card -->
+  <rect x="660" y="226" width="90" height="52" rx="8" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="705" y="248" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="700">Imaging</text>
+  <text x="705" y="262" font-size="8" fill="#93c5fd" text-anchor="middle">Radiology</text>
+  <text x="705" y="273" font-size="14" text-anchor="middle">🩻</text>
+
+  <!-- Lines from data to AI core -->
+  <line x1="750" y1="116" x2="870" y2="190" stroke="#3b82f6" stroke-width="1" opacity="0.4" stroke-dasharray="4 3"/>
+  <line x1="750" y1="184" x2="870" y2="200" stroke="#3b82f6" stroke-width="1.2" opacity="0.5" stroke-dasharray="4 3"/>
+  <line x1="750" y1="252" x2="870" y2="215" stroke="#3b82f6" stroke-width="1" opacity="0.4" stroke-dasharray="4 3"/>
+
+  <!-- AI Core (CDSS) -->
+  <circle cx="920" cy="200" r="55" fill="#0a2040" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="920" cy="200" r="40" fill="#3b82f6" opacity="0.12"/>
+  <circle cx="920" cy="200" r="22" fill="#3b82f6" opacity="0.4"/>
+  <circle cx="920" cy="200" r="65" fill="none" stroke="#3b82f6" stroke-width="0.7" opacity="0.3" stroke-dasharray="5 5"/>
+  <circle cx="920" cy="200" r="82" fill="none" stroke="#3b82f6" stroke-width="0.4" opacity="0.15" stroke-dasharray="3 7"/>
+  <text x="920" y="196" font-size="10" fill="white" text-anchor="middle" font-weight="700">CDSS</text>
+  <text x="920" y="210" font-size="8" fill="#60a5fa" text-anchor="middle">AI Engine</text>
+
+  <!-- Lines from AI core to outputs -->
+  <line x1="970" y1="175" x2="1050" y2="130" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
+  <line x1="975" y1="200" x2="1050" y2="200" stroke="#3b82f6" stroke-width="1.2" opacity="0.6"/>
+  <line x1="970" y1="225" x2="1050" y2="270" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
+
+  <!-- Output cards -->
+  <!-- Diagnosis -->
+  <rect x="1050" y="100" width="105" height="52" rx="8" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="1102" y="122" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="700">Diagnosis</text>
+  <text x="1102" y="136" font-size="8" fill="#93c5fd" text-anchor="middle">Accuracy ↑</text>
+  <text x="1102" y="148" font-size="12" text-anchor="middle">🎯</text>
+
+  <!-- Treatment -->
+  <rect x="1050" y="174" width="105" height="52" rx="8" fill="url(#cardGrad)" stroke="#22c55e" stroke-width="1.5" opacity="0.9"/>
+  <text x="1102" y="196" font-size="9" fill="#4ade80" text-anchor="middle" font-weight="700">Treatment Plan</text>
+  <text x="1102" y="210" font-size="8" fill="#86efac" text-anchor="middle">Personalised</text>
+  <text x="1102" y="222" font-size="12" text-anchor="middle">💊</text>
+
+  <!-- Monitoring -->
+  <rect x="1050" y="248" width="105" height="52" rx="8" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="1102" y="270" font-size="9" fill="#60a5fa" text-anchor="middle" font-weight="700">Monitoring</text>
+  <text x="1102" y="284" font-size="8" fill="#93c5fd" text-anchor="middle">Continuous</text>
+  <text x="1102" y="296" font-size="12" text-anchor="middle">📡</text>
+
+  <!-- Pulse line (ECG-style) at bottom -->
+  <path d="M660 390 L700 390 L715 360 L730 420 L745 370 L760 390 L800 390 L815 375 L830 405 L845 385 L860 390 L1155 390" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.35"/>
+</svg>

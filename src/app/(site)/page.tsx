@@ -170,13 +170,13 @@ export default function Home() {
           </div>
           <p className="text-gray-500 text-sm mb-6">Latest breakthroughs in AI-powered healthcare and medicine</p>
 
-          {/* Featured blog card */}
-          <Link href="/insights/ai-powered-early-detection-strategies-chronic-diseases" className="group block rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden mb-5">
+          {/* Latest featured blog card */}
+          <Link href="/insights/ai-clinical-decision-making-patient-care" className="group block rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden mb-5">
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-2/5 aspect-video md:aspect-auto overflow-hidden bg-gray-100 flex-shrink-0">
+              <div className="md:w-2/5 overflow-hidden bg-gray-100 flex-shrink-0" style={{ minHeight: '200px' }}>
                 <img
-                  src="/images/blog-ai-detection-feature.svg"
-                  alt="AI-Powered Early Detection for Chronic Diseases"
+                  src="/images/blog-ai-clinical-feature.svg"
+                  alt="AI in Clinical Decision-Making and Patient Care"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ minHeight: '200px' }}
                 />
@@ -184,24 +184,24 @@ export default function Home() {
               <div className="flex-1 p-6 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: '#d1faf0', color: '#0a8c6a' }}>Blog</span>
+                    <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: '#dbeafe', color: '#1d4ed8' }}>Blog</span>
                     <span className="text-xs text-gray-400">📅 July 13, 2026</span>
-                    <span className="text-xs text-gray-400">· 12 min read</span>
+                    <span className="text-xs text-gray-400">· 11 min read</span>
                   </div>
-                  <h3 className="font-bold text-gray-900 text-lg leading-snug mb-3 group-hover:text-green-800 transition-colors">
-                    AI-Powered Early Detection Strategies for Chronic Diseases
+                  <h3 className="font-bold text-gray-900 text-lg leading-snug mb-3 group-hover:text-blue-800 transition-colors">
+                    Artificial Intelligence in Clinical Decision-Making and Patient Care
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                    AI for early disease detection is transforming chronic disease management by analyzing medical records, imaging, wearable data, and lab results to identify health risks before symptoms appear.
+                    Discover how AI transforms clinical decision-making with CDSS, predictive analytics, and personalized care to improve diagnosis and patient outcomes in modern healthcare.
                   </p>
                   <div className="flex flex-wrap gap-1.5">
-                    {['AI', 'Chronic Disease', 'Predictive Analytics', 'Healthcare'].map((kw) => (
+                    {['CDSS', 'AI Healthcare', 'Clinical Decisions', 'Patient Care'].map((kw) => (
                       <span key={kw} className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">{kw}</span>
                     ))}
                   </div>
                 </div>
                 <div className="mt-4">
-                  <span className="text-sm font-semibold" style={{ color: '#0fb68c' }}>Read article →</span>
+                  <span className="text-sm font-semibold" style={{ color: '#3b82f6' }}>Read article →</span>
                 </div>
               </div>
             </div>

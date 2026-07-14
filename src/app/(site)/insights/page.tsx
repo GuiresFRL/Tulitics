@@ -9,6 +9,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'ai-clinical-decision-making-patient-care',
+    badge: 'Blog',
+    date: 'July 13, 2026',
+    readTime: '11 min read',
+    title: 'Artificial Intelligence in Clinical Decision-Making and Patient Care',
+    excerpt: 'Discover how AI transforms clinical decision-making with CDSS, predictive analytics, and personalized care to improve diagnosis and patient outcomes in modern healthcare.',
+    image: '/images/blog-ai-clinical-feature.svg',
+    keywords: ['CDSS', 'AI Healthcare', 'Clinical Decisions', 'Patient Care'],
+  },
+  {
     slug: 'ai-powered-early-detection-strategies-chronic-diseases',
     badge: 'Blog',
     date: 'July 13, 2026',
