@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
@@ -10,50 +9,62 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI-Powered Early Detection Strategies for Chronic Diseases',
     description: 'AI for early disease detection improves chronic disease management using predictive analytics, enabling timely diagnosis, personalised care, and better outcomes.',
-    url: 'https://guires.info/insights/ai-powered-early-detection-strategies-chronic-diseases',
+    url: 'https://guires.info/insights/blog/ai-powered-early-detection-strategies-chronic-diseases',
     type: 'article',
     images: [{ url: '/images/blog-ai-detection-feature.jpg', width: 1200, height: 630, alt: 'AI-Powered Early Detection for Chronic Diseases' }],
   },
 }
 
+const keywords = ['AI', 'Chronic Disease', 'Predictive Analytics', 'Healthcare', 'Early Detection']
+
 export default function BlogPostPage() {
   return (
-    <div className="bg-white min-h-screen">
-      {/* Hero / Feature Image */}
-      <div className="w-full" style={{ background: '#0a2e2e' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-0">
-          <div className="mb-4 flex items-center gap-2 flex-wrap">
-            <Link href="/insights" className="text-green-300 text-sm hover:text-white transition-colors">← Insights</Link>
-            <span className="text-green-600 text-sm">/</span>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: '#0fb68c', color: '#fff' }}>Blog</span>
+    <article className="bg-white min-h-screen">
+
+      {/* ── HERO ── */}
+      <section className="relative text-white" style={{ background: 'linear-gradient(135deg, #0a2e2e 0%, #0d4a3a 100%)' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+          <div className="flex items-center gap-2 mb-4 flex-wrap">
+            <Link href="/insights" className="text-xs font-semibold uppercase tracking-widest hover:opacity-80 transition-opacity" style={{ color: '#0fb68c' }}>
+              ← Insights
+            </Link>
+            <span className="text-gray-500">·</span>
+            <span className="text-xs px-3 py-1 rounded-full font-semibold" style={{ background: 'rgba(15,182,140,0.15)', color: '#0fb68c' }}>Blog</span>
+            <span className="text-xs text-gray-400">July 13, 2026</span>
+            <span className="text-xs text-gray-400">· 12 min read</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+          <h1 className="text-2xl sm:text-4xl font-extrabold leading-tight mb-4 max-w-3xl">
             AI-Powered Early Detection Strategies for Chronic Diseases
           </h1>
-          <div className="flex flex-wrap items-center gap-4 text-green-300 text-sm mb-8">
-            <span>📅 July 13, 2026</span>
-            <span>· 12 min read</span>
-            <span>· Tulitics Editorial Team</span>
+          <p className="text-gray-300 text-sm sm:text-base max-w-2xl leading-relaxed mb-6">
+            AI for early disease detection is transforming chronic disease management by analyzing medical records, imaging, wearable data, and lab results to identify health risks before symptoms appear.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {keywords.map((kw) => (
+              <span key={kw} className="text-xs px-3 py-1 rounded-full font-medium" style={{ background: 'rgba(15,182,140,0.15)', color: '#0fb68c' }}>{kw}</span>
+            ))}
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="rounded-t-2xl overflow-hidden">
-            <img
-              src="/images/blog-ai-detection-feature.jpg"
-              alt="AI-Powered Early Detection for Chronic Diseases"
-              className="w-full h-auto object-cover"
-              style={{ maxHeight: '420px', objectFit: 'cover' }}
-            />
-          </div>
+      </section>
+
+      {/* ── FEATURE IMAGE ── */}
+      <div className="w-full" style={{ background: '#0a2e2e' }}>
+        <div className="max-w-6xl mx-auto">
+          <img
+            src="/images/blog-ai-detection-feature.jpg"
+            alt="AI-Powered Early Detection for Chronic Diseases"
+            className="w-full"
+            style={{ maxHeight: '400px', objectFit: 'cover' }}
+          />
         </div>
       </div>
 
-      {/* Article Body */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
-        {/* Overview callout */}
-        <div className="border-l-4 rounded-r-xl p-5 mb-10" style={{ borderColor: '#0fb68c', background: '#f0fdf9' }}>
-          <p className="font-semibold text-gray-800 mb-1">Overview</p>
-          <p className="text-gray-700 text-sm leading-relaxed">
+      {/* ── ARTICLE BODY ── */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+        {/* Overview */}
+        <div className="rounded-2xl p-6 mb-10" style={{ background: 'linear-gradient(135deg, #0a2e2e 0%, #0d4a3a 100%)', border: '1px solid rgba(15,182,140,0.25)' }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#0fb68c' }}>Overview</p>
+          <p className="text-white text-base leading-relaxed">
             AI-powered early disease detection is transforming chronic disease management by analyzing medical records, imaging, wearable device data, and laboratory results to identify health risks before symptoms appear. Through predictive analytics and machine learning, healthcare providers can deliver earlier diagnoses, personalized treatments, and proactive interventions, leading to improved patient outcomes, reduced healthcare costs, and more effective preventive care.
           </p>
         </div>
@@ -315,40 +326,39 @@ export default function BlogPostPage() {
         </section>
 
         {/* Conclusion */}
-        <section className="mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Conclusion</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
+        <div className="rounded-2xl p-6 mb-10" style={{ background: 'linear-gradient(135deg, #0a2e2e 0%, #0d4a3a 100%)', border: '1px solid rgba(15,182,140,0.25)' }}>
+          <h2 className="text-lg font-bold text-white mb-3">Conclusion</h2>
+          <p className="text-gray-300 text-sm leading-relaxed mb-3">
             <strong>AI for Early Disease Detection</strong> is reimagining the way chronic conditions are diagnosed and treated through early detection and personalized care. With the help of smart prediction, intelligent image processing, and constant monitoring of patients, medical practitioners can take necessary action much earlier to provide better care and save costs in the process.
           </p>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             The continued adoption of <strong>predictive analytics for chronic diseases</strong>, supported by high-quality healthcare data and robust clinical validation, will further strengthen <strong>AI in Chronic Disease Management</strong>. As demonstrated through emerging <em>case studies on AI-assisted early detection systems</em>, artificial intelligence is expected to play an increasingly important role in improving healthcare outcomes and enabling more proactive disease prevention.
           </p>
-        </section>
+        </div>
 
         {/* References */}
-        <section className="mb-10 border-t border-gray-200 pt-8">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">References</h2>
+        <div className="rounded-xl p-5 bg-gray-50 border border-gray-200 mb-10">
+          <h2 className="text-base font-bold text-gray-900 mb-3">References</h2>
           <p className="text-sm text-gray-600 leading-relaxed">
             Dong, C., Ji, Y., Fu, Z., Qi, Y., Yi, T., Yang, Y., Sun, Y., & Sun, H. (2025). Precision management in chronic disease: An AI empowered perspective on medicine-engineering crossover. <em>iScience</em>, <em>28</em>(3), 112044.{' '}
             <a href="https://doi.org/10.1016/j.isci.2025.112044" className="underline" style={{ color: '#0fb68c' }} target="_blank" rel="noopener noreferrer">
               https://doi.org/10.1016/j.isci.2025.112044
             </a>
           </p>
-        </section>
+        </div>
 
-        {/* Back to Insights */}
-        <div className="border-t border-gray-200 pt-8 flex items-center justify-between flex-wrap gap-4">
+        {/* Back nav */}
+        <div className="flex items-center justify-between pt-6 border-t border-gray-200 flex-wrap gap-4">
           <Link href="/insights" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#0fb68c' }}>
             ← Back to Insights
           </Link>
-          <div className="flex items-center gap-3 text-xs text-gray-500">
-            <span>Share:</span>
-            {['LinkedIn', 'X', 'Email'].map((s) => (
-              <a key={s} href="#" className="px-3 py-1 border border-gray-200 rounded-full hover:border-gray-400 transition-colors">{s}</a>
+          <div className="flex flex-wrap gap-2">
+            {keywords.map((kw) => (
+              <span key={kw} className="text-xs px-3 py-1 rounded-full bg-gray-100 text-gray-500">{kw}</span>
             ))}
           </div>
         </div>
       </div>
-    </div>
+    </article>
   )
 }

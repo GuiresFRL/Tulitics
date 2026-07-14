@@ -9,52 +9,63 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Artificial Intelligence in Clinical Decision-Making and Patient Care',
     description: 'How AI transforms clinical decision-making with CDSS, predictive analytics, and personalized care to improve diagnosis and patient outcomes.',
-    url: 'https://guires.info/insights/ai-clinical-decision-making-patient-care',
+    url: 'https://guires.info/insights/blog/ai-clinical-decision-making-patient-care',
     type: 'article',
     images: [{ url: '/images/blog-ai-clinical-feature.jpg', width: 1200, height: 480, alt: 'AI in Clinical Decision-Making' }],
   },
 }
 
+const keywords = ['CDSS', 'AI Healthcare', 'Clinical Decisions', 'Patient Care', 'Predictive Analytics']
+
 export default function BlogPostPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <article className="bg-white min-h-screen">
 
-      {/* ── HERO BANNER ── */}
-      <div style={{ background: '#051a2e' }} className="w-full">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-0">
-          <div className="mb-4 flex items-center gap-2 flex-wrap">
-            <Link href="/insights" className="text-blue-300 text-sm hover:text-white transition-colors">← Insights</Link>
-            <span className="text-blue-700 text-sm">/</span>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full text-white" style={{ background: '#3b82f6' }}>Blog</span>
+      {/* ── HERO ── */}
+      <section className="relative text-white" style={{ background: 'linear-gradient(135deg, #051a2e 0%, #0a2040 100%)' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+          <div className="flex items-center gap-2 mb-4 flex-wrap">
+            <Link href="/insights" className="text-xs font-semibold uppercase tracking-widest hover:opacity-80 transition-opacity" style={{ color: '#60a5fa' }}>
+              ← Insights
+            </Link>
+            <span className="text-gray-500">·</span>
+            <span className="text-xs px-3 py-1 rounded-full font-semibold" style={{ background: 'rgba(59,130,246,0.15)', color: '#60a5fa' }}>Blog</span>
+            <span className="text-xs text-gray-400">July 13, 2026</span>
+            <span className="text-xs text-gray-400">· 11 min read</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+          <h1 className="text-2xl sm:text-4xl font-extrabold leading-tight mb-4 max-w-3xl">
             Artificial Intelligence in Clinical Decision-Making and Patient Care: How AI Is Transforming Modern Healthcare
           </h1>
-          <div className="flex flex-wrap items-center gap-4 text-blue-300 text-sm mb-8">
-            <span>📅 July 13, 2026</span>
-            <span>· 11 min read</span>
-            <span>· Tulitics Editorial Team</span>
+          <p className="text-gray-300 text-sm sm:text-base max-w-2xl leading-relaxed mb-6">
+            Discover how AI transforms clinical decision-making with CDSS, predictive analytics, and personalized care to improve diagnosis and patient outcomes in modern healthcare.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {keywords.map((kw) => (
+              <span key={kw} className="text-xs px-3 py-1 rounded-full font-medium" style={{ background: 'rgba(59,130,246,0.15)', color: '#60a5fa' }}>{kw}</span>
+            ))}
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="rounded-t-2xl overflow-hidden">
-            <img
-              src="/images/blog-ai-clinical-feature.jpg"
-              alt="AI in Clinical Decision-Making and Patient Care"
-              className="w-full h-auto"
-              style={{ maxHeight: '400px', objectFit: 'cover' }}
-            />
-          </div>
+      </section>
+
+      {/* ── FEATURE IMAGE ── */}
+      <div className="w-full" style={{ background: '#051a2e' }}>
+        <div className="max-w-6xl mx-auto">
+          <img
+            src="/images/blog-ai-clinical-feature.jpg"
+            alt="AI in Clinical Decision-Making and Patient Care"
+            className="w-full"
+            style={{ maxHeight: '400px', objectFit: 'cover' }}
+          />
         </div>
       </div>
 
       {/* ── ARTICLE BODY ── */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
 
         {/* Overview */}
-        <div className="border-l-4 rounded-r-xl p-5 mb-10" style={{ borderColor: '#3b82f6', background: '#eff6ff' }}>
-          <p className="font-semibold text-gray-800 mb-1">Overview</p>
-          <p className="text-gray-700 text-sm leading-relaxed">
+        <div className="rounded-2xl p-6 mb-10" style={{ background: 'linear-gradient(135deg, #051a2e 0%, #0a2040 100%)', border: '1px solid rgba(59,130,246,0.25)' }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#60a5fa' }}>Overview</p>
+          <p className="text-white text-base leading-relaxed">
             Artificial Intelligence (AI) is transforming clinical decision-making by helping healthcare professionals diagnose diseases more accurately, predict patient risks, personalize treatments, and improve overall patient care. Through technologies such as Clinical Decision Support Systems (CDSS), predictive analytics, and machine learning, AI enables faster, data-driven decisions while reducing errors and enhancing healthcare efficiency.
           </p>
         </div>
@@ -322,40 +333,39 @@ export default function BlogPostPage() {
         </section>
 
         {/* Conclusion */}
-        <section className="mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Conclusion</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
+        <div className="rounded-2xl p-6 mb-10" style={{ background: 'linear-gradient(135deg, #051a2e 0%, #0a2040 100%)', border: '1px solid rgba(59,130,246,0.25)' }}>
+          <h2 className="text-lg font-bold text-white mb-3">Conclusion</h2>
+          <p className="text-gray-300 text-sm leading-relaxed mb-3">
             The advent of <strong>Artificial Intelligence in Clinical Decision-Making</strong> and patient care is helping the healthcare industry deliver precise diagnosis, preventive intervention, and personalised treatment. This is made possible using <strong>Clinical Decision Support Systems</strong>, <strong>Predictive Analytics in Healthcare</strong>, <strong>AI for Chronic Disease Management</strong>, and <strong>AI for Medical Decision Making</strong>.
           </p>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             With continued advancements and the future trends of AI in clinical decision support, healthcare organisations will increasingly integrate AI into clinical practice to provide safer, smarter, and more efficient patient care.
           </p>
-        </section>
+        </div>
 
         {/* References */}
-        <section className="mb-10 border-t border-gray-200 pt-8">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">Reference</h2>
+        <div className="rounded-xl p-5 bg-gray-50 border border-gray-200 mb-10">
+          <h2 className="text-base font-bold text-gray-900 mb-3">Reference</h2>
           <p className="text-sm text-gray-600 leading-relaxed">
             Khosravi, M., Zare, Z., Mojtabaeian, S. M., & Izadi, R. (2024). Artificial Intelligence and Decision-Making in Healthcare: A Thematic Analysis of a Systematic Review of Reviews. <em>Health services research and managerial epidemiology</em>, <em>11</em>, 23333928241234863.{' '}
             <a href="https://doi.org/10.1177/23333928241234863" className="underline" style={{ color: '#3b82f6' }} target="_blank" rel="noopener noreferrer">
               https://doi.org/10.1177/23333928241234863
             </a>
           </p>
-        </section>
+        </div>
 
-        {/* Footer nav */}
-        <div className="border-t border-gray-200 pt-8 flex items-center justify-between flex-wrap gap-4">
+        {/* Back nav */}
+        <div className="flex items-center justify-between pt-6 border-t border-gray-200 flex-wrap gap-4">
           <Link href="/insights" className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#3b82f6' }}>
             ← Back to Insights
           </Link>
-          <div className="flex items-center gap-3 text-xs text-gray-500">
-            <span>Share:</span>
-            {['LinkedIn', 'X', 'Email'].map((s) => (
-              <a key={s} href="#" className="px-3 py-1 border border-gray-200 rounded-full hover:border-gray-400 transition-colors">{s}</a>
+          <div className="flex flex-wrap gap-2">
+            {keywords.map((kw) => (
+              <span key={kw} className="text-xs px-3 py-1 rounded-full bg-gray-100 text-gray-500">{kw}</span>
             ))}
           </div>
         </div>
       </div>
-    </div>
+    </article>
   )
 }
