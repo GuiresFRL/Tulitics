@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1100 360" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="wfbg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f0fdf9"/>
+      <stop offset="100%" style="stop-color:#e8f8f2"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0fb68c"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="360" fill="url(#wfbg)" rx="16"/>
+
+  <!-- Title -->
+  <text x="550" y="44" font-size="18" fill="#0a2e2e" text-anchor="middle" font-weight="800">AI Workflow for Early Disease Detection</text>
+  <line x1="200" y1="52" x2="900" y2="52" stroke="#0fb68c" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Step boxes + arrows — 5 steps -->
+  <!-- Step 1: Data Collection -->
+  <rect x="30" y="90" width="160" height="200" rx="12" fill="white" stroke="#0fb68c" stroke-width="1.5"/>
+  <rect x="30" y="90" width="160" height="36" rx="12" fill="#0a2e2e"/>
+  <rect x="30" y="114" width="160" height="12" fill="#0a2e2e"/>
+  <text x="110" y="113" font-size="12" fill="white" text-anchor="middle" font-weight="700">① Data Collection</text>
+  <text x="110" y="150" font-size="18" text-anchor="middle">📋</text>
+  <text x="110" y="172" font-size="10" fill="#374151" text-anchor="middle">EHR Records</text>
+  <text x="110" y="188" font-size="10" fill="#374151" text-anchor="middle">Medical Imaging</text>
+  <text x="110" y="204" font-size="10" fill="#374151" text-anchor="middle">Wearable Devices</text>
+  <text x="110" y="220" font-size="10" fill="#374151" text-anchor="middle">Lab Results</text>
+  <text x="110" y="236" font-size="10" fill="#374151" text-anchor="middle">Genomics Data</text>
+  <text x="110" y="270" font-size="9" fill="#0fb68c" text-anchor="middle" font-style="italic">Multi-source inputs</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="192" y1="190" x2="208" y2="190" stroke="#0fb68c" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Data Processing -->
+  <rect x="210" y="90" width="160" height="200" rx="12" fill="white" stroke="#0fb68c" stroke-width="1.5"/>
+  <rect x="210" y="90" width="160" height="36" rx="12" fill="#0a5c3c"/>
+  <rect x="210" y="114" width="160" height="12" fill="#0a5c3c"/>
+  <text x="290" y="113" font-size="12" fill="white" text-anchor="middle" font-weight="700">② Processing</text>
+  <text x="290" y="150" font-size="18" text-anchor="middle">⚙️</text>
+  <text x="290" y="172" font-size="10" fill="#374151" text-anchor="middle">Data Cleaning</text>
+  <text x="290" y="188" font-size="10" fill="#374151" text-anchor="middle">Normalisation</text>
+  <text x="290" y="204" font-size="10" fill="#374151" text-anchor="middle">Feature Extraction</text>
+  <text x="290" y="220" font-size="10" fill="#374151" text-anchor="middle">Missing Value Handling</text>
+  <text x="290" y="236" font-size="10" fill="#374151" text-anchor="middle">Data Integration</text>
+  <text x="290" y="270" font-size="9" fill="#0a5c3c" text-anchor="middle" font-style="italic">Clean, structured data</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="372" y1="190" x2="388" y2="190" stroke="#0fb68c" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: ML Models -->
+  <rect x="390" y="90" width="160" height="200" rx="12" fill="white" stroke="#0fb68c" stroke-width="1.5"/>
+  <rect x="390" y="90" width="160" height="36" rx="12" fill="#0fb68c"/>
+  <rect x="390" y="114" width="160" height="12" fill="#0fb68c"/>
+  <text x="470" y="113" font-size="12" fill="white" text-anchor="middle" font-weight="700">③ AI / ML Models</text>
+  <text x="470" y="150" font-size="18" text-anchor="middle">🧠</text>
+  <text x="470" y="172" font-size="10" fill="#374151" text-anchor="middle">Machine Learning</text>
+  <text x="470" y="188" font-size="10" fill="#374151" text-anchor="middle">Deep Learning</text>
+  <text x="470" y="204" font-size="10" fill="#374151" text-anchor="middle">Natural Language Processing</text>
+  <text x="470" y="220" font-size="10" fill="#374151" text-anchor="middle">Computer Vision</text>
+  <text x="470" y="236" font-size="10" fill="#374151" text-anchor="middle">Predictive Analytics</text>
+  <text x="470" y="270" font-size="9" fill="#0fb68c" text-anchor="middle" font-style="italic">Pattern recognition</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="552" y1="190" x2="568" y2="190" stroke="#0fb68c" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Risk Prediction -->
+  <rect x="570" y="90" width="160" height="200" rx="12" fill="white" stroke="#0fb68c" stroke-width="1.5"/>
+  <rect x="570" y="90" width="160" height="36" rx="12" fill="#0a2e2e"/>
+  <rect x="570" y="114" width="160" height="12" fill="#0a2e2e"/>
+  <text x="650" y="113" font-size="12" fill="white" text-anchor="middle" font-weight="700">④ Risk Prediction</text>
+  <text x="650" y="150" font-size="18" text-anchor="middle">📊</text>
+  <text x="650" y="172" font-size="10" fill="#374151" text-anchor="middle">Disease Risk Score</text>
+  <text x="650" y="188" font-size="10" fill="#374151" text-anchor="middle">Progression Forecast</text>
+  <text x="650" y="204" font-size="10" fill="#374151" text-anchor="middle">High-Risk Flagging</text>
+  <text x="650" y="220" font-size="10" fill="#374151" text-anchor="middle">Clinical Insights</text>
+  <text x="650" y="236" font-size="10" fill="#374151" text-anchor="middle">Diagnosis Support</text>
+  <text x="650" y="270" font-size="9" fill="#0fb68c" text-anchor="middle" font-style="italic">Actionable alerts</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="732" y1="190" x2="748" y2="190" stroke="#0fb68c" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 5: Clinical Action -->
+  <rect x="750" y="90" width="160" height="200" rx="12" fill="white" stroke="#0fb68c" stroke-width="1.5"/>
+  <rect x="750" y="90" width="160" height="36" rx="12" fill="#0a5c3c"/>
+  <rect x="750" y="114" width="160" height="12" fill="#0a5c3c"/>
+  <text x="830" y="113" font-size="12" fill="white" text-anchor="middle" font-weight="700">⑤ Clinical Action</text>
+  <text x="830" y="150" font-size="18" text-anchor="middle">🏥</text>
+  <text x="830" y="172" font-size="10" fill="#374151" text-anchor="middle">Early Diagnosis</text>
+  <text x="830" y="188" font-size="10" fill="#374151" text-anchor="middle">Preventive Treatment</text>
+  <text x="830" y="204" font-size="10" fill="#374151" text-anchor="middle">Personalised Care Plan</text>
+  <text x="830" y="220" font-size="10" fill="#374151" text-anchor="middle">Timely Intervention</text>
+  <text x="830" y="236" font-size="10" fill="#374151" text-anchor="middle">Long-term Monitoring</text>
+  <text x="830" y="270" font-size="9" fill="#0a5c3c" text-anchor="middle" font-style="italic">Better patient outcomes</text>
+
+  <!-- Feedback loop arc -->
+  <path d="M 910 300 Q 550 350 110 300" fill="none" stroke="#0fb68c" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.5" marker-end="url(#arrow)"/>
+  <text x="550" y="348" font-size="10" fill="#0fb68c" text-anchor="middle" font-style="italic">Continuous monitoring &amp; model improvement</text>
+</svg>

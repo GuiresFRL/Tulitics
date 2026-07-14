@@ -161,29 +161,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── LATEST ARTICLE ───────────────────────────────────────── */}
-      <section className="py-10 px-6 bg-white">
+      {/* ── LATEST FROM INSIGHTS ─────────────────────────────────── */}
+      <section className="py-10 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold mb-1 text-gray-900">Latest Article</h2>
-          <p className="text-gray-500 text-sm mb-6">Latest breakthroughs in AI-powered healthcare and medicine</p>
-          <div className="grid md:grid-cols-3 gap-5">
-            {[
-              { badge: 'Call for Papers', date: 'March 10, 2026', title: 'Special Issue: AI in Cancer Diagnosis', excerpt: 'Submit your research on AI applications in oncology. Deadline: April 30, 2026', href: '/journal/current-issue' },
-              { badge: 'Call for Papers', date: 'March 10, 2026', title: 'Special Issue: AI in Cancer Diagnosis', excerpt: 'Submit your research on AI applications in oncology. Deadline: April 30, 2026', href: '/journal/current-issue' },
-              { badge: 'Call for Papers', date: 'March 10, 2026', title: 'Special Issue: AI in Cancer Diagnosis', excerpt: 'Submit your research on AI applications in oncology. Deadline: April 30, 2026', href: '/journal/current-issue' },
-            ].map((article, i) => (
-              <div key={i} className="bg-white rounded-xl border border-gray-200 shadow-sm p-5 flex flex-col relative overflow-hidden">
-                <div className="absolute bottom-0 left-0 right-0 h-1 rounded-b-xl" style={{ background: '#0fb68c' }} />
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: '#d1faf0', color: '#0a8c6a' }}>{article.badge}</span>
-                  <span className="text-xs text-gray-500">📅 {article.date}</span>
-                </div>
-                <h3 className="font-bold text-gray-900 text-sm mb-2 leading-snug">{article.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-4 flex-1">{article.excerpt}</p>
-                <Link href={article.href} className="text-sm font-semibold" style={{ color: '#0fb68c' }}>Read more →</Link>
-              </div>
-            ))}
+          <div className="flex items-center justify-between mb-1">
+            <h2 className="text-2xl font-bold text-gray-900">Latest Insights</h2>
+            <Link href="/insights" className="text-sm font-semibold" style={{ color: '#0fb68c' }}>View all →</Link>
           </div>
+          <p className="text-gray-500 text-sm mb-6">Latest breakthroughs in AI-powered healthcare and medicine</p>
+
+          {/* Featured blog card */}
+          <Link href="/insights/ai-powered-early-detection-strategies-chronic-diseases" className="group block rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden mb-5">
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-2/5 aspect-video md:aspect-auto overflow-hidden bg-gray-100 flex-shrink-0">
+                <img
+                  src="/images/blog-ai-detection-feature.svg"
+                  alt="AI-Powered Early Detection for Chronic Diseases"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  style={{ minHeight: '200px' }}
+                />
+              </div>
+              <div className="flex-1 p-6 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: '#d1faf0', color: '#0a8c6a' }}>Blog</span>
+                    <span className="text-xs text-gray-400">📅 July 13, 2026</span>
+                    <span className="text-xs text-gray-400">· 12 min read</span>
+                  </div>
+                  <h3 className="font-bold text-gray-900 text-lg leading-snug mb-3 group-hover:text-green-800 transition-colors">
+                    AI-Powered Early Detection Strategies for Chronic Diseases
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                    AI for early disease detection is transforming chronic disease management by analyzing medical records, imaging, wearable data, and lab results to identify health risks before symptoms appear.
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {['AI', 'Chronic Disease', 'Predictive Analytics', 'Healthcare'].map((kw) => (
+                      <span key={kw} className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">{kw}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <span className="text-sm font-semibold" style={{ color: '#0fb68c' }}>Read article →</span>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
       </section>
 

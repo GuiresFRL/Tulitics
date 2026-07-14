@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 shadow-sm">
       {/* Top social bar */}
-      <div className="flex items-center justify-end gap-3 px-6 py-2" style={{ background: '#0a2e2e' }}>
+      <div className="flex items-center justify-center sm:justify-end gap-2 sm:gap-3 px-4 sm:px-6 py-2" style={{ background: '#0a2e2e' }}>
         {[
           { title: 'Facebook', path: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z' },
           { title: 'X', path: 'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.629 5.904-5.629zm-1.161 17.52h1.833L7.084 4.126H5.117z' },
