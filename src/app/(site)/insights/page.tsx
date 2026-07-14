@@ -35,7 +35,7 @@ const posts = [
     readTime: '10 min read',
     title: 'AI-Driven Innovations in Precision Medicine and Healthcare Delivery',
     excerpt: 'Discover how AI-driven precision medicine improves diagnostics, treatment decisions, and healthcare delivery systems. Explore real-world applications, implementation strategies, challenges, and future trends.',
-    image: '/images/blog-ai-precision-feature.svg',
+    image: '/images/blog-ai-precision-feature.jpg',
     keywords: ['Precision Medicine', 'AI Healthcare', 'Genomics', 'Personalised Therapy'],
   },
   {

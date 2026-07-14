@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI-Driven Innovations in Precision Medicine and Healthcare Delivery',
     description: 'Discover how AI-driven precision medicine improves diagnostics, treatment decisions, and healthcare delivery systems.',
-    images: [{ url: '/images/blog-ai-precision-feature.svg' }],
+    images: [{ url: '/images/blog-ai-precision-feature.jpg' }],
   },
 }
 
@@ -45,7 +45,7 @@ export default function BlogAIPrecisionMedicine() {
       <div className="w-full" style={{ background: '#0a1628' }}>
         <div className="max-w-6xl mx-auto">
           <img
-            src="/images/blog-ai-precision-feature.svg"
+            src="/images/blog-ai-precision-feature.jpg"
             alt="AI-Driven Innovations in Precision Medicine and Healthcare Delivery"
             className="w-full"
             style={{ maxHeight: '400px', objectFit: 'cover' }}
