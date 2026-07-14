@@ -9,6 +9,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'ai-precision-medicine-healthcare-delivery',
+    badge: 'Blog',
+    date: 'July 10, 2026',
+    readTime: '10 min read',
+    title: 'AI-Driven Innovations in Precision Medicine and Healthcare Delivery',
+    excerpt: 'Discover how AI-driven precision medicine improves diagnostics, treatment decisions, and healthcare delivery systems. Explore real-world applications, implementation strategies, challenges, and future trends.',
+    image: '/images/blog-ai-precision-feature.svg',
+    keywords: ['Precision Medicine', 'AI Healthcare', 'Genomics', 'Personalised Therapy'],
+  },
+  {
     slug: 'ai-clinical-decision-making-patient-care',
     badge: 'Blog',
     date: 'July 13, 2026',
