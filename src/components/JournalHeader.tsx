@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { createPortal } from 'react-dom'
 
 const navItems = [
   {
@@ -45,8 +46,25 @@ const navItems = [
   { label: 'Contact us', href: '/journal/contact-us' },
 ]
 
+interface DropdownPos { label: string; top: number; left: number }
+
 export default function JournalHeader({ subtitle }: { subtitle?: string }) {
-  const [open, setOpen] = useState<string | null>(null)
+  const [dropdown, setDropdown] = useState<DropdownPos | null>(null)
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const openAt = (label: string, el: HTMLElement) => {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+    const rect = el.getBoundingClientRect()
+    setDropdown({ label, top: rect.bottom, left: rect.left })
+  }
+
+  const scheduleClose = () => {
+    closeTimer.current = setTimeout(() => setDropdown(null), 120)
+  }
+
+  const cancelClose = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+  }
 
   return (
     <>
@@ -79,14 +97,9 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
       <nav className="w-full bg-white border-b border-gray-200 shadow-sm sticky z-40" style={{ top: '95px' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           {/* Scrollable tabs on mobile */}
-          <div className="flex items-center overflow-x-auto scrollbar-hide flex-1 min-w-0 pb-48 -mb-48">
+          <div className="flex items-center overflow-x-auto scrollbar-hide flex-1 min-w-0">
             {navItems.map((item) => (
-              <div
-                key={item.label}
-                className="relative flex-shrink-0"
-                onMouseEnter={() => item.children && setOpen(item.label)}
-                onMouseLeave={() => setOpen(null)}
-              >
+              <div key={item.label} className="flex-shrink-0">
                 {item.href ? (
                   <Link
                     href={item.href}
@@ -97,32 +110,19 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
                 ) : (
                   <button
                     className="inline-flex items-center gap-1 px-3 sm:px-4 py-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap"
-                    onClick={() => setOpen(open === item.label ? null : item.label)}
-                    aria-expanded={open === item.label}
+                    onMouseEnter={(e) => openAt(item.label, e.currentTarget)}
+                    onMouseLeave={scheduleClose}
+                    onClick={(e) => dropdown?.label === item.label ? setDropdown(null) : openAt(item.label, e.currentTarget)}
+                    aria-expanded={dropdown?.label === item.label}
                   >
                     {item.label}
                     <svg
-                      className={`w-3 h-3 flex-shrink-0 transition-transform ${open === item.label ? 'rotate-180' : ''}`}
+                      className={`w-3 h-3 flex-shrink-0 transition-transform ${dropdown?.label === item.label ? 'rotate-180' : ''}`}
                       fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                )}
-                {/* Dropdown — outside the button, inside the wrapper div */}
-                {open === item.label && item.children && (
-                  <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-lg rounded-lg min-w-56 z-50 py-1">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.label}
-                        href={child.href}
-                        onClick={() => setOpen(null)}
-                        className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-800 whitespace-nowrap"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
                 )}
               </div>
             ))}
@@ -142,6 +142,28 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
           </div>
         </div>
       </nav>
+
+      {/* Portal dropdown — rendered into body, immune to overflow clipping */}
+      {dropdown && typeof document !== 'undefined' && createPortal(
+        <div
+          style={{ position: 'fixed', top: dropdown.top, left: dropdown.left, zIndex: 9999 }}
+          onMouseEnter={cancelClose}
+          onMouseLeave={scheduleClose}
+          className="bg-white border border-gray-200 shadow-lg rounded-lg py-1 min-w-56"
+        >
+          {navItems.find((i) => i.label === dropdown.label)?.children?.map((child) => (
+            <Link
+              key={child.label}
+              href={child.href}
+              onClick={() => setDropdown(null)}
+              className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-800 whitespace-nowrap"
+            >
+              {child.label}
+            </Link>
+          ))}
+        </div>,
+        document.body
+      )}
     </>
   )
 }
