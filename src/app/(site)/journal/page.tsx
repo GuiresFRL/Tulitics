@@ -32,7 +32,6 @@ export default function JournalsPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3 leading-snug">
               Journal of Artificial Intelligence in Medicine &amp; Public Health
             </h2>
-            <p className="text-xs font-semibold uppercase tracking-widest mb-2 text-yellow-600">Coming Soon</p>
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
               Journal of Artificial Intelligence in Medicine and Public Health, the official journal of Tulitics, is an upcoming multidisciplinary, peer-reviewed, open access journal focused on the integration of medicine and artificial intelligence. The journal will publish high-quality research, reviews, and case reports covering clinical research, public health, digital health innovations, and emerging biomedical technologies.
             </p>
