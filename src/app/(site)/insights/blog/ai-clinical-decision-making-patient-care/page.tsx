@@ -52,7 +52,7 @@ export default function BlogPostPage() {
       </section>
 
       {/* ── ARTICLE BODY ── */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14 text-base">
 
         {/* Overview */}
         <div className="rounded-2xl p-6 mb-10" style={{ background: 'linear-gradient(135deg, #051a2e 0%, #0a2040 100%)', border: '1px solid rgba(59,130,246,0.25)' }}>

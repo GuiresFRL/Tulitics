@@ -52,7 +52,7 @@ export default function BlogPostPage() {
       </section>
 
       {/* ── ARTICLE BODY ── */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14 text-base">
         {/* Overview */}
         <div className="rounded-2xl p-6 mb-10" style={{ background: 'linear-gradient(135deg, #0a2e2e 0%, #0d4a3a 100%)', border: '1px solid rgba(15,182,140,0.25)' }}>
           <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#0fb68c' }}>Overview</p>
@@ -62,7 +62,7 @@ export default function BlogPostPage() {
         </div>
 
         {/* Intro */}
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-5 mb-10">
+        <div className="space-y-5 text-gray-700 leading-relaxed mb-10">
           <p>
             Many of the chronic diseases such as heart disease, diabetes, chronic kidney disease, chronic respiratory diseases, and cancer form most of the expenses that healthcare incurs globally, as well as the mortality rate. Traditional methods have relied on clinical signs of these diseases before diagnosing patients.
           </p>

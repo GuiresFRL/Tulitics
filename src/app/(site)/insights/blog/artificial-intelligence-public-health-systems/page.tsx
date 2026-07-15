@@ -46,7 +46,7 @@ export default function BlogAIPublicHealth() {
       </section>
 
       {/* ── CONTENT ──────────────────────────────────────────────── */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14 text-base">
 
         {/* Overview callout */}
         <div className="rounded-2xl p-6 mb-10" style={{ background: 'linear-gradient(135deg, #021a0e 0%, #0a1f3a 100%)', border: '1px solid rgba(22,163,74,0.3)' }}>

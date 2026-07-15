@@ -46,7 +46,7 @@ export default function BlogMLDiseasePrediction() {
       </section>
 
       {/* ── CONTENT ──────────────────────────────────────────────── */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14 text-base">
 
         {/* Overview callout */}
         <div className="rounded-2xl p-6 mb-10" style={{ background: 'linear-gradient(135deg, #020d1a 0%, #052218 100%)', border: '1px solid rgba(37,99,235,0.3)' }}>
