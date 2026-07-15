@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 
 const policies = [
   {
+    id: 'editorial-policies',
     title: 'Editorial Policies',
     body: [
       'The Editor-in-Chief and the Editorial Team of the Journal of Artificial Intelligence in Medicine and Public Health (JAIMPH) are committed to upholding the highest standards of integrity, transparency, and ethical practice in scholarly publishing. The journal\'s editorial policies are aligned with its aims and scope and are guided by internationally recognized best practices.',
@@ -25,12 +26,14 @@ const policies = [
     ],
   },
   {
+    id: 'plagiarism',
     title: 'Plagiarism Policy',
     body: [
       'The journal maintains a strict policy against plagiarism. All submitted manuscripts must be original work and properly cite previously published sources. Manuscripts may be screened using plagiarism detection tools. Submissions found to contain plagiarism, data fabrication, or duplicate publication will be rejected or retracted. The journal follows ethical standards recommended by the Committee on Publication Ethics.',
     ],
   },
   {
+    id: 'peer-review',
     title: 'Peer Review Process',
     body: [
       'All submitted manuscripts undergo an initial editorial screening to evaluate their alignment with the journal\'s scope, originality, scholarly contribution, compliance with submission requirements, and adherence to ethical standards. Submissions that do not meet these criteria may be declined without external review to ensure the integrity and quality of published content.',
@@ -40,6 +43,7 @@ const policies = [
     ],
   },
   {
+    id: 'ethics',
     title: 'Ethics Approval Policy',
     body: [
       'All research must comply with internationally recognized ethical standards. Studies involving human participants, animals, or sensitive data require prior approval from a recognized Institutional Ethics Committee or Institutional Review Board (IRB), with the approving body, protocol number, and date reported in the manuscript.',
@@ -48,6 +52,7 @@ const policies = [
     ],
   },
   {
+    id: 'authorship',
     title: 'Authorship Policy',
     body: [
       'Authorship should be limited to individuals who have made substantial intellectual contributions to the research and the preparation of the manuscript. All listed authors must have participated sufficiently to take public responsibility for the content of the article. Contributions may include the conception or design of the study, acquisition, analysis, or interpretation of data, and drafting or critically revising the manuscript for important intellectual content.',
@@ -55,6 +60,7 @@ const policies = [
     ],
   },
   {
+    id: 'conflict',
     title: 'Conflict of Interest',
     body: [
       'All authors, reviewers, and editors are required to disclose any financial, personal, or professional relationships that could be perceived as influencing the research, its interpretation, or the review process. Potential conflicts of interest must be clearly declared within the manuscript to ensure transparency and maintain the integrity of the scholarly record.',
@@ -62,6 +68,7 @@ const policies = [
     ],
   },
   {
+    id: 'citation',
     title: 'Citation Manipulation Policy',
     body: [
       'The journal maintains strict standards of integrity and ethics in scholarly publishing. Any practice intended to artificially inflate citation metrics or misrepresent the impact of research is strictly prohibited. Authors must cite their prior work only when directly relevant, and coordinated efforts to cite specific journals, editors, or groups to boost metrics are not allowed. Reviewers and editors must not request or include citations unrelated to the manuscript\'s content, nor misrepresent references to favor publications or authors.',
@@ -69,6 +76,7 @@ const policies = [
     ],
   },
   {
+    id: 'corrections',
     title: 'Corrections and Retractions Policy',
     body: [
       'The journal is committed to preserving the integrity, accuracy, and transparency of the scientific record. Authors are expected to ensure that all data, analyses, and interpretations in their submissions are accurate and complete. If any errors, omissions, or ethical concerns are discovered after publication, authors must immediately notify the editorial office.',
@@ -85,6 +93,7 @@ const policies = [
     footer: 'Transparency and Accessibility: All corrections and retractions are publicly accessible, clearly indicated, and permanently linked to the original article. This ensures that readers are fully informed and that the integrity of the scientific record is maintained.',
   },
   {
+    id: 'open-access',
     title: 'Open Access Policy',
     body: [
       'The journal is fully committed to open access, ensuring that all published research is freely and immediately available to readers worldwide without subscription or paywall barriers. All content may be downloaded, read, copied, distributed, printed, or linked to, provided proper attribution is given. Authors retain copyright under a standard open-access license (e.g., Creative Commons Attribution, CC BY), which allows reuse, redistribution, and adaptation of the work with appropriate credit. Authors are encouraged to provide datasets and supplementary materials to enhance transparency, reproducibility, and reader understanding.',
@@ -102,7 +111,7 @@ export default function EditorialPoliciesPage() {
 
         <div className="space-y-8">
           {policies.map((policy) => (
-            <section key={policy.title} className="border border-gray-200 rounded-xl p-6">
+            <section key={policy.title} id={policy.id} className="border border-gray-200 rounded-xl p-6 scroll-mt-36">
               <h2 className="font-bold text-gray-900 text-base mb-4" style={{ color: '#0a2e2e' }}>{policy.title}</h2>
               <div className="space-y-3">
                 {policy.body.map((para, i) => (

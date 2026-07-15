@@ -79,33 +79,50 @@ export default function JournalHeader({ subtitle }: { subtitle?: string }) {
       <nav className="w-full bg-white border-b border-gray-200 shadow-sm sticky z-40" style={{ top: '95px' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           {/* Scrollable tabs on mobile */}
-          <div className="flex items-center overflow-x-auto scrollbar-hide flex-1 min-w-0">
+          <div className="flex items-center overflow-x-auto scrollbar-hide flex-1 min-w-0 pb-48 -mb-48">
             {navItems.map((item) => (
-              <div key={item.label} className="relative flex-shrink-0">
+              <div
+                key={item.label}
+                className="relative flex-shrink-0"
+                onMouseEnter={() => item.children && setOpen(item.label)}
+                onMouseLeave={() => setOpen(null)}
+              >
                 {item.href ? (
-                  <Link href={item.href} className="inline-block px-3 sm:px-4 py-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap">
+                  <Link
+                    href={item.href}
+                    className="inline-block px-3 sm:px-4 py-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap"
+                  >
                     {item.label}
                   </Link>
                 ) : (
                   <button
                     className="inline-flex items-center gap-1 px-3 sm:px-4 py-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-700 hover:text-green-800 whitespace-nowrap"
-                    onMouseEnter={() => setOpen(item.label)}
-                    onMouseLeave={() => setOpen(null)}
+                    onClick={() => setOpen(open === item.label ? null : item.label)}
+                    aria-expanded={open === item.label}
                   >
                     {item.label}
-                    <svg className="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg
+                      className={`w-3 h-3 flex-shrink-0 transition-transform ${open === item.label ? 'rotate-180' : ''}`}
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
-                    {open === item.label && item.children && (
-                      <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-lg rounded min-w-48 z-50">
-                        {item.children.map((child) => (
-                          <Link key={child.label} href={child.href} className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-800 whitespace-nowrap">
-                            {child.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
                   </button>
+                )}
+                {/* Dropdown — outside the button, inside the wrapper div */}
+                {open === item.label && item.children && (
+                  <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-lg rounded-lg min-w-56 z-50 py-1">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.label}
+                        href={child.href}
+                        onClick={() => setOpen(null)}
+                        className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-800 whitespace-nowrap"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
                 )}
               </div>
             ))}
