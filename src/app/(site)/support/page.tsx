@@ -101,8 +101,8 @@ export default function SupportPage() {
                   <span className="text-gray-400">Email: </span>
                   <a href="mailto:info@tulitics.com" className="font-semibold" style={{ color: '#0a5c3c' }}>info@tulitics.com</a>
                 </p>
-                <p><span className="text-gray-400">Phone: </span>+91-XXXXXXXXXX</p>
-                <p><span className="text-gray-400">Address: </span>[official office address here]</p>
+                <p><span className="text-gray-400">Phone: </span><a href="tel:+919884350006" className="font-semibold" style={{ color: '#0a5c3c' }}>+91 9884350006</a></p>
+                <p><span className="text-gray-400">Address: </span>10, Kutty Street, Nungambakkam, Chennai – 600 034</p>
               </div>
             </div>
           </div>

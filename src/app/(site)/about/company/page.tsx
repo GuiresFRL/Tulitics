@@ -146,8 +146,8 @@ export default function CompanyPage() {
             <div className="rounded-2xl p-6" style={{ background: '#ecfdf5' }}>
               <h3 className="font-bold mb-2 text-lg" style={{ color: '#0a5c3c' }}>Headquarters</h3>
               <p className="text-sm leading-relaxed" style={{ color: '#065f46' }}>
-                123 Research Road, Chennai, 600034, Tamil Nadu, India<br />
-                contact@tulitics.com · +91-98745 61230
+                10, Kutty Street, Nungambakkam, Chennai – 600 034, Tamil Nadu, India<br />
+                contact@tulitics.com · +91 9884350006
               </p>
             </div>
           </div>

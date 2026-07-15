@@ -54,9 +54,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider text-green-400">Contact</h4>
             <ul className="space-y-3 text-sm text-green-100">
-              <li className="flex gap-2 items-start"><span>📞</span><span>+91-98745 61230</span></li>
+              <li className="flex gap-2 items-start"><span>📞</span><a href="tel:+919884350006" className="hover:text-white transition-colors">+91 9884350006</a></li>
               <li className="flex gap-2 items-start"><span>✉️</span><a href="mailto:contact@tulitics.com" className="hover:text-white transition-colors">contact@tulitics.com</a></li>
-              <li className="flex gap-2 items-start"><span>📍</span><span>123 Research Road, Chennai, 600034</span></li>
+              <li className="flex gap-2 items-start"><span>📍</span><span>10, Kutty Street, Nungambakkam, Chennai – 600 034</span></li>
             </ul>
           </div>
         </div>
