@@ -22,14 +22,18 @@ export default function BlogPostPage() {
     <article className="bg-white min-h-screen">
 
       {/* ── HERO ── */}
-      <section className="relative text-white" style={{ background: 'linear-gradient(135deg, #0a2e2e 0%, #0d4a3a 100%)' }}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+      <section
+        className="relative text-white"
+        style={{ backgroundImage: 'url(/images/blog-ai-detection-feature.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className="absolute inset-0" style={{ background: 'rgba(10,46,46,0.80)' }} />
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
           <div className="flex items-center gap-2 mb-4 flex-wrap">
             <Link href="/insights" className="text-xs font-semibold uppercase tracking-widest hover:opacity-80 transition-opacity" style={{ color: '#0fb68c' }}>
               ← Insights
             </Link>
             <span className="text-gray-500">·</span>
-            <span className="text-xs px-3 py-1 rounded-full font-semibold" style={{ background: 'rgba(15,182,140,0.15)', color: '#0fb68c' }}>Blog</span>
+            <span className="text-xs px-3 py-1 rounded-full font-semibold" style={{ background: 'rgba(15,182,140,0.25)', color: '#0fb68c' }}>Blog</span>
             <span className="text-xs text-gray-400">July 13, 2026</span>
             <span className="text-xs text-gray-400">· 12 min read</span>
           </div>
@@ -46,18 +50,6 @@ export default function BlogPostPage() {
           </div>
         </div>
       </section>
-
-      {/* ── FEATURE IMAGE ── */}
-      <div className="w-full" style={{ background: '#0a2e2e' }}>
-        <div className="max-w-6xl mx-auto">
-          <img
-            src="/images/blog-ai-detection-feature.jpg"
-            alt="AI-Powered Early Detection for Chronic Diseases"
-            className="w-full"
-            style={{ maxHeight: '400px', objectFit: 'cover' }}
-          />
-        </div>
-      </div>
 
       {/* ── ARTICLE BODY ── */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">

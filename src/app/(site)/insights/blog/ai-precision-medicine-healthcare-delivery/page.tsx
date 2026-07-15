@@ -18,8 +18,12 @@ export default function BlogAIPrecisionMedicine() {
     <article className="bg-white min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative text-white" style={{ background: 'linear-gradient(135deg, #0a1628 0%, #0d1f3c 55%, #0e2a1e 100%)' }}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+      <section
+        className="relative text-white"
+        style={{ backgroundImage: 'url(/images/blog-ai-precision-feature.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className="absolute inset-0" style={{ background: 'rgba(10,22,40,0.80)' }} />
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
           <div className="flex items-center gap-2 mb-4 flex-wrap">
             <Link href="/insights" className="text-xs font-semibold uppercase tracking-widest" style={{ color: '#0fb68c' }}>← Insights</Link>
             <span className="text-gray-500">·</span>
@@ -40,18 +44,6 @@ export default function BlogAIPrecisionMedicine() {
           </div>
         </div>
       </section>
-
-      {/* Feature Image */}
-      <div className="w-full" style={{ background: '#0a1628' }}>
-        <div className="max-w-6xl mx-auto">
-          <img
-            src="/images/blog-ai-precision-feature.jpg"
-            alt="AI-Driven Innovations in Precision Medicine and Healthcare Delivery"
-            className="w-full"
-            style={{ maxHeight: '400px', objectFit: 'cover' }}
-          />
-        </div>
-      </div>
 
       {/* ── CONTENT ──────────────────────────────────────────────── */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">

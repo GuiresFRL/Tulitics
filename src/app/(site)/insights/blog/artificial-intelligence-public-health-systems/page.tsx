@@ -18,8 +18,12 @@ export default function BlogAIPublicHealth() {
     <article className="bg-white min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative text-white" style={{ background: 'linear-gradient(135deg, #021a0e 0%, #042a18 50%, #0a1f3a 100%)' }}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+      <section
+        className="relative text-white"
+        style={{ backgroundImage: 'url(/images/blog-ai-public-health-feature.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className="absolute inset-0" style={{ background: 'rgba(2,26,14,0.78)' }} />
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
           <div className="flex items-center gap-2 mb-4 flex-wrap">
             <Link href="/insights" className="text-xs font-semibold uppercase tracking-widest" style={{ color: '#4ade80' }}>← Insights</Link>
             <span className="text-gray-500">·</span>
@@ -40,18 +44,6 @@ export default function BlogAIPublicHealth() {
           </div>
         </div>
       </section>
-
-      {/* Feature Image */}
-      <div className="w-full" style={{ background: '#021a0e' }}>
-        <div className="max-w-6xl mx-auto">
-          <img
-            src="/images/blog-ai-public-health-feature.jpg"
-            alt="The Role of Artificial Intelligence in Modern Public Health Systems"
-            className="w-full"
-            style={{ maxHeight: '400px', objectFit: 'cover' }}
-          />
-        </div>
-      </div>
 
       {/* ── CONTENT ──────────────────────────────────────────────── */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">

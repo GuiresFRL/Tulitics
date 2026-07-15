@@ -18,8 +18,12 @@ export default function BlogMLDiseasePrediction() {
     <article className="bg-white min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative text-white" style={{ background: 'linear-gradient(135deg, #020d1a 0%, #061628 55%, #052218 100%)' }}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+      <section
+        className="relative text-white"
+        style={{ backgroundImage: 'url(/images/blog-ml-disease-feature.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className="absolute inset-0" style={{ background: 'rgba(2,13,26,0.80)' }} />
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
           <div className="flex items-center gap-2 mb-4 flex-wrap">
             <Link href="/insights" className="text-xs font-semibold uppercase tracking-widest" style={{ color: '#0fb68c' }}>← Insights</Link>
             <span className="text-gray-500">·</span>
@@ -40,18 +44,6 @@ export default function BlogMLDiseasePrediction() {
           </div>
         </div>
       </section>
-
-      {/* Feature Image */}
-      <div className="w-full" style={{ background: '#020d1a' }}>
-        <div className="max-w-6xl mx-auto">
-          <img
-            src="/images/blog-ml-disease-feature.jpg"
-            alt="Machine Learning Applications in Disease Prediction and Prevention"
-            className="w-full"
-            style={{ maxHeight: '400px', objectFit: 'cover' }}
-          />
-        </div>
-      </div>
 
       {/* ── CONTENT ──────────────────────────────────────────────── */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
