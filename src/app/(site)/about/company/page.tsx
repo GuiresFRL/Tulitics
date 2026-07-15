@@ -62,10 +62,10 @@ const team = [
 ]
 
 const milestones = [
-  { year: '2024', event: 'Tulitics founded with a mission to democratise academic publishing.' },
-  { year: '2025', event: 'Launched the digital publishing platform and editorial management system.' },
-  { year: 'Q1 2026', event: 'Onboarded international editorial board and peer reviewer network.' },
-  { year: 'Q2 2026', event: 'Official launch of the Journal of AI in Medicine & Public Health (JAIMPH).' },
+  { year: 'Q1 2026', event: 'Tulitics founded with a mission to democratise academic publishing.' },
+  { year: 'Q2 2026', event: 'Launched the digital publishing platform and editorial management system.' },
+  { year: 'Q2 2026', event: 'Onboarded international editorial board and peer reviewer network.' },
+  { year: 'Q3 2026', event: 'Official launch of the Journal of AI in Medicine & Public Health (JAIMPH).' },
   { year: '2026+', event: 'Expanding to Management, Engineering, and Social Sciences journals.' },
 ]
 
@@ -91,7 +91,7 @@ export default function CompanyPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              { n: '2024', l: 'Founded' },
+              { n: '2026', l: 'Founded' },
               { n: '1', l: 'Active Journal' },
               { n: '20+', l: 'Countries Reached' },
               { n: '100%', l: 'Open Access' },
